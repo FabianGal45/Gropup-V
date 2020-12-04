@@ -1,13 +1,11 @@
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-}
 
-.navbar .navbar-collapse {
-    text-align: center;
-}
-
-p{
-    background-color: red;
-    padding: 20px;
+.main-display-image{
+    height: 700px;
+    background-image: url(images/pexels-mateusz-sałaciak.jpg); /*Image taken from: https://www.pexels.com/photo/brown-wooden-house-on-green-grass-field-near-green-trees-and-mountains-4275885/ */
+    background-size: cover;
+    background-size: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-position: fixed;
+    
 }
