@@ -32,3 +32,10 @@
     margin: 0 20px;
     background-color: royalblue;
 }
+
+.container{
+    background-color: yellow;
+}
+.row{
+    background-color: rebeccapurple;
+}
