@@ -1,0 +1,13 @@
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+#1{
+    color: red;
+    padding: 20px;
+}
