@@ -89,6 +89,7 @@ a.carousel-control-prev, a.carousel-control-next{
     .main-background-image{
         height: 540px;
     }
+    
     .main-content{
         margin: 0;
     }
@@ -106,12 +107,49 @@ a.carousel-control-prev, a.carousel-control-next{
     .blank-space{
         height: 50px;
     }
+
+    .carousel-inner{
+        padding: 0;
+    }
+
+    .carousel-item{
+        padding: 0;
+    }
+
+    .carousel-item div.row{
+        margin: 0;
+    }
+
+    div.col{
+        padding: 0;
+    }
+
+    .hide-on-mobile{
+        display: none !important;
+    }
+
+    div.carousel-inner{
+        padding: 0;
+    }
+    
+    ol.carousel-indicators{
+        margin: 0;
+    }
+
 }
 
+@media (max-width: 950px) { 
+    .hide-on-tablet{
+        display: none !important;
+    }
+}
 
 @media (min-width: 950px) { 
     .galleries{
         margin: 30px 100px;
+    }
+    .hide-on-tablet{
+        display: none;
     }
 }
 @media (min-width: 1200px) { 
