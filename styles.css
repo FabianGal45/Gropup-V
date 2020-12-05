@@ -1,4 +1,10 @@
+/* .body{
+    background-color: rgb(150, 150, 150);
+} */
 
+.navbar{
+    background-color: rgb(36, 36, 36);
+}
 .main-background-image{
     height: 700px;
     background-image: url(images/pexels-mateusz-sałaciak.jpg); /*Image taken from: https://www.pexels.com/photo/brown-wooden-house-on-green-grass-field-near-green-trees-and-mountains-4275885/ */
@@ -14,9 +20,15 @@
     margin-left: 10%;
     padding-top: 100px;
 }
+
+.main-content h1{
+    text-shadow: 0px 0px 20px #000000, 0px 0px 10px #000000;
+}
+
 .JohnDoePortrait{
     margin-top: 30px;
     margin-left: 5%;
+    box-shadow: 0px 0px 20px #000000, 0px 0px 10px #221209;
 }
 
 .main-content p{
@@ -28,7 +40,18 @@
 
 .blank-space{
     height: 100px;
+    /* background-color: rgb(240, 240, 240); */
 }
+
+.galleries .btn{
+    margin: 0 30px;
+    background-color: blue;
+}
+.galleries{
+    margin: 30px 0;
+}
+
+
 
 .row{
     margin-bottom: 30px;
