@@ -64,7 +64,7 @@ a.nav-link:hover{
 
 /* Carousel with images */
 
-.carousel-item.row{
+.carousel-item .row{
     margin-bottom: 30px;
 }
 
@@ -92,6 +92,17 @@ a.carousel-control-prev, a.carousel-control-next{
 }
 
 
+
+/* About John Doe */
+
+.about-John-Doe .image{
+    height: 200px;
+    /* width: 200px; */
+}
+
+
+/* Responsiveness */
+
 @media (max-width: 600px) {
     .main-background-image{
         height: 540px;
@@ -109,10 +120,6 @@ a.carousel-control-prev, a.carousel-control-next{
 
     .main-content h1{
         text-align: center;
-    }
-
-    .blank-space{
-        height: 50px;
     }
 
     .carousel-inner{
@@ -142,11 +149,14 @@ a.carousel-control-prev, a.carousel-control-next{
     ol.carousel-indicators{
         margin: 0;
     }
-
 }
 
 @media (max-width: 950px) { 
     .hide-on-tablet{
+        display: none !important;
+    }
+    /* Placed this here as the image in the about section would overlap with the text */
+    .about-John-Doe div.col-md-3{
         display: none !important;
     }
 }
@@ -158,6 +168,8 @@ a.carousel-control-prev, a.carousel-control-next{
     .hide-on-tablet{
         display: none;
     }
+
+
 }
 @media (min-width: 1200px) { 
     .galleries{
