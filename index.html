@@ -42,12 +42,11 @@
         <div class="blank-space"></div>
 
         <!-- <h2 class="text-center">My most popular work.</h2> -->
-        <div class="galleries text-center"> <!-- From this section you will chose which type of gallery you want to view and the bootstrap carousel will switch accordingly-->
+        <div class="galleries d-flex justify-content-around"> <!-- From this section you will chose which type of gallery you want to view and the bootstrap carousel will switch accordingly-->
             <button type="button" class="btn btn-secondary btn-lg" data-target="#carouselExampleIndicators" data-slide-to="0">Family Events</button>
             <button type="button" class="btn btn-secondary btn-lg" data-target="#carouselExampleIndicators" data-slide-to="1">Weddings</button>
             <button type="button" class="btn btn-secondary btn-lg" data-target="#carouselExampleIndicators" data-slide-to="2">Travel</button>
-            <button type="button" class="btn btn-secondary btn-lg">Portraits</button>
-
+            <button type="button" class="btn btn-secondary btn-lg d-none d-xl-inline-block" data-target="#carouselExampleIndicators" data-slide-to="3">Portraits</button>
         </div>
 
         <!-- Bootstrap carousel -->
@@ -56,10 +55,35 @@
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             </ol>
           
             <div class="container-fluid carousel-inner">
                 <div class="carousel-item carousel-item active">
+                    <div class="row">
+                        <div class="col box1">
+                            <img src="images/Nature/pexels-donald-tong-58557.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col box1">
+                            <img src="images/Nature/pexels-eberhard-grossgasteiger-443696.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col box1">
+                            <img src="images/Nature/pexels-eberhard-grossgasteiger-2217364.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col box1">
+                            <img src="images/Nature/pexels-donald-tong-58557.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col box1">
+                            <img src="images/Nature/pexels-eberhard-grossgasteiger-443696.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col box1">
+                            <img src="images/Nature/pexels-eberhard-grossgasteiger-2217364.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item">
                     <div class="row">
                         <div class="col box1">
                             <img src="images/Nature/pexels-donald-tong-58557.jpg" class="d-block w-100" alt="...">
