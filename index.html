@@ -10,7 +10,7 @@
     <body>
         <!-- Bootstrap navbar -->
         <nav class="navbar navbar-expand-sm navbar-dark">
-            <a class="current-page navbar-brand" href="#">Home page</a>
+            <a class="current-page navbar-brand" href="index.html">Home page</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,12 +34,10 @@
 
         <div class="container-fluid main-background-image">
             <div class="main-content">
-                <h1 class="displayName">John Doe's Photography</h1>
-                <img src="images/This-Person-Does-Not-Exist1.jpg" class="JohnDoePortrait rounded float-left" alt="John Doe"><!-- Image taken from: https://thispersondoesnotexist.com/ -->
+                <h1>John Doe's Photography</h1>
+                <img src="images/This-Person-Does-Not-Exist1.jpg" class="rounded" alt="John Doe"><!-- Image taken from: https://thispersondoesnotexist.com/ -->
             </div>
         </div>
-
-        <div class="blank-space"></div>
 
         <!-- <h2 class="text-center">My most popular work.</h2> -->
         <div class="galleries d-flex justify-content-around"> <!-- From this section you will chose which type of gallery you want to view and the bootstrap carousel will switch accordingly-->
@@ -55,7 +53,7 @@
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3" class="d-none d-xl-inline-block"></li>
             </ol>
           
             <div class="container-fluid carousel-inner">

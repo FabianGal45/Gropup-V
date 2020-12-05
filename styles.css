@@ -29,7 +29,9 @@ a.nav-link:hover{
     text-shadow: 0px 0px 20px #000000, 0px 0px 10px #000000;
 }
 
-.JohnDoePortrait{
+.main-content img{
+    height: 200px;
+    width: 200px;
     margin-top: 30px;
     margin-left: 5%;
     box-shadow: 0px 0px 20px #000000, 0px 0px 10px #221209;
@@ -40,11 +42,6 @@ a.nav-link:hover{
     bottom: 0;
     left: 0;
     right:0;
-}
-
-.blank-space{
-    height: 100px;
-    /* background-color: rgb(240, 240, 240); */
 }
 
 .galleries .btn{
@@ -59,24 +56,6 @@ a.nav-link:hover{
 .galleries{
     margin: 30px 0;
 }
-
-@media (min-width: 768px) { 
-    .galleries{
-        margin: 30px 100px;
-    }
-
-}
-@media (min-width: 1200px) { 
-    .galleries{
-        margin: 30px 200px;
-    }
-}
-@media (min-width: 1500px) { 
-    .galleries{
-        margin: 30px 300px;
-    }
-}
-
 
 .row{
     margin-bottom: 30px;
@@ -97,5 +76,52 @@ a.nav-link:hover{
 }
 
 a.carousel-control-prev, a.carousel-control-next{
-    width: 140px;
+    width: 8%;
+}
+
+.blank-space{
+    height: 50px;
+    /* background-color: rgb(240, 240, 240); */
+}
+
+
+@media (max-width: 600px) {
+    .main-background-image{
+        height: 540px;
+    }
+    .main-content{
+        margin: 0;
+    }
+
+    .main-content img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-content h1{
+        text-align: center;
+    }
+
+    .blank-space{
+        height: 50px;
+    }
+}
+
+
+@media (min-width: 950px) { 
+    .galleries{
+        margin: 30px 100px;
+    }
+}
+@media (min-width: 1200px) { 
+    .galleries{
+        margin: 30px 200px;
+    }
+
+}
+@media (min-width: 1555px) { 
+    .galleries{
+        margin: 30px 300px;
+    }
 }
