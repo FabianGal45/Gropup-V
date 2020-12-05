@@ -61,7 +61,31 @@
             </ol>
           
             <div class="container-fluid carousel-inner">
-                <div class="carousel-item carousel-item active">
+                <div class="carousel-item carousel-item active"> <!-- Family events images -->
+                    <div class="row"> 
+                        <div class="col">
+                            <img src="images/Nature/pexels-donald-tong-58557.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col hide-on-mobile">
+                            <img src="images/Nature/pexels-eberhard-grossgasteiger-443696.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col hide-on-mobile">
+                            <img src="images/Nature/pexels-eberhard-grossgasteiger-2217364.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <div class="row hide-on-tablet">
+                        <div class="col">
+                            <img src="images/Nature/pexels-donald-tong-58557.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col">
+                            <img src="images/Nature/pexels-eberhard-grossgasteiger-443696.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col">
+                            <img src="images/Nature/pexels-eberhard-grossgasteiger-2217364.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item"> <!-- Weddings images -->
                     <div class="row">
                         <div class="col">
                             <img src="images/Nature/pexels-donald-tong-58557.jpg" class="d-block w-100" alt="...">
@@ -85,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item"> <!-- Travel -->
                     <div class="row">
                         <div class="col">
                             <img src="images/Nature/pexels-donald-tong-58557.jpg" class="d-block w-100" alt="...">
@@ -109,31 +133,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col">
-                            <img src="images/Nature/pexels-donald-tong-58557.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="col hide-on-mobile">
-                            <img src="images/Nature/pexels-eberhard-grossgasteiger-443696.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="col hide-on-mobile">
-                            <img src="images/Nature/pexels-eberhard-grossgasteiger-2217364.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <div class="row hide-on-tablet">
-                        <div class="col">
-                            <img src="images/Nature/pexels-donald-tong-58557.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="col">
-                            <img src="images/Nature/pexels-eberhard-grossgasteiger-443696.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="col">
-                            <img src="images/Nature/pexels-eberhard-grossgasteiger-2217364.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
+                <div class="carousel-item"> <!-- Portraits -->
                     <div class="row">
                         <div class="col ">
                             <img src="images/Nature/pexels-donald-tong-58557.jpg" class="d-block w-100" alt="...">
@@ -171,13 +171,13 @@
           
         <div class="blank-space"></div>
 
-        <div class="container-fluid">
-            <div class="about-John-Doe row">
+        <div class="about-John-Doe container-fluid">
+            <div class="row">
                 <div class="col-md-3 image d-none d-md-flex justify-content-end">
                     <!-- image here -->
                     <img src="images/This-Person-Does-Not-Exist1.jpg" class="rounded" alt="John Doe"><!-- Image taken from: https://thispersondoesnotexist.com/ -->
                 </div>
-                <div class="col-md">
+                <div class="col-md about">
                     <!-- Information about the photographer would go here -->
                     <h5>About me</h5>
                     <p>Hi, I am John Doe, I am freelance photographer and editor. I excel in capturing portraits and family events and providing the best customer experience according to my past clients.</p>
@@ -187,22 +187,41 @@
                     <!-- Working hours -->
 
                     <h5>Working hours</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
-                        <li class="list-group-item">Porta ac consectetur ac</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
+                    <table class="table table-hover"> <!--Bootstrap Table-->
+                        <tbody>
+                          <tr>
+                            <th scope="row">Monday</th>
+                            <td>10 a.m.</td>
+                            <td>6 p.m.</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Tuesday</th>
+                            <td>10 a.m.</td>
+                            <td>6 p.m.</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Wednesday</th>
+                            <td>10 a.m.</td>
+                            <td>6 p.m.</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Thursday</th>
+                            <td>10 a.m.</td>
+                            <td>6 p.m.</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Friday</th>
+                            <td>10 a.m.</td>
+                            <td>6 p.m.</td>
+                          </tr>
+                        </tbody>
+                      </table>
 
-                    <a href="contact.html">Contact me</a>
+                    <a class="d-flex justify-content-center" href="contact.html">Contact me</a>
                 </div>
     
             </div>
         </div>
-        
-
-
 
         <!-- Bootstrap Scripts -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
