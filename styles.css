@@ -135,9 +135,16 @@ a.carousel-control-prev, a.carousel-control-next{
     transition-duration: 0.3s;
 } 
 
+
+
+
 /* Responsiveness */
 
 @media (max-width: 600px) {
+    .navbar .nav-item a{
+        padding: 20px 0;
+    }
+    
     .main-background-image{
         height: 540px;
     }
