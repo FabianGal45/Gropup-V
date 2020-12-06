@@ -17,7 +17,7 @@ a.nav-link:hover{
 
 .main-background-image{
     height: 700px;
-    background-image: url(images/pexels-mateusz-sałaciak.jpg); /*Image taken from: https://www.pexels.com/photo/brown-wooden-house-on-green-grass-field-near-green-trees-and-mountains-4275885/ */
+    background-image: url(./images/pexels-mateusz-salaciak.jpg); /*Image taken from: https://www.pexels.com/photo/brown-wooden-house-on-green-grass-field-near-green-trees-and-mountains-4275885/ */
     background-size: cover;
     background-size: no-repeat;
     background-position-y: center;
