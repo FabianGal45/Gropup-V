@@ -101,11 +101,10 @@ a.carousel-control-prev, a.carousel-control-next{
 
 .about-John-Doe .image{
     height: 200px;
-    /* width: 200px; */
 }
 
 .about-John-Doe div.row{
-    padding: 30px 0;
+    padding-top: 30px;
 }
 
 .about-John-Doe .list-group-item{
@@ -117,12 +116,20 @@ a.carousel-control-prev, a.carousel-control-next{
 }
 
 .about-John-Doe .about{
-    margin-bottom: 30px;
+    height: 349;
 }
+
+.about-John-Doe .about p{
+    text-align: center;
+}
+
+
+
 
 .about-John-Doe .col-md a{
     padding: 10px 0;
     margin: 0 20px;
+    margin-bottom: 30px;
     border-radius: 3px;
     background-color: rgb(36, 36, 36);
     color: white;
@@ -163,6 +170,9 @@ a.carousel-control-prev, a.carousel-control-next{
         text-align: center;
     }
 
+
+    /* Carousel */
+
     .carousel-inner{
         padding: 0;
     }
@@ -191,9 +201,14 @@ a.carousel-control-prev, a.carousel-control-next{
         margin: 0;
     }
 
+
     /* About John Doe */
     .about-John-Doe .col-md a{
         padding: 15px 0;
+    }
+
+    .about-John-Doe .about{
+        margin-bottom: 30px;
     }
     
     .about-John-Doe h5{
@@ -218,15 +233,15 @@ a.carousel-control-prev, a.carousel-control-next{
     .hide-on-tablet{
         display: none;
     }
-
-
 }
+
 @media (min-width: 1200px) { 
     .galleries{
         margin: 30px 200px;
     }
 
 }
+
 @media (min-width: 1555px) { 
     .galleries{
         margin: 30px 300px;
