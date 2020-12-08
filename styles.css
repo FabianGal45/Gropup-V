@@ -64,6 +64,10 @@ a.nav-link:hover{
 
 /* Carousel with images */
 
+.carousel-item h3{
+    color: white;
+}
+
 .carousel-item .row{
     margin-bottom: 30px;
 }
@@ -140,6 +144,7 @@ a.carousel-control-prev, a.carousel-control-next{
 
 /* Responsiveness */
 
+/* Mobile size */
 @media (max-width: 600px) {
     .navbar .nav-item a{
         padding: 20px 0;
@@ -208,6 +213,7 @@ a.carousel-control-prev, a.carousel-control-next{
     }
 }
 
+/* Talet size */
 @media (max-width: 950px) { 
     .hide-on-tablet{
         display: none !important;
@@ -229,10 +235,17 @@ a.carousel-control-prev, a.carousel-control-next{
     }
 }
 
+/* Desktop/Laptop size */
+
 @media (min-width: 1200px) { 
     .galleries{
         margin: 30px 200px;
     }
+
+    /* I need to work more on this for  */
+    /* .carousel-item .col img{
+        width: 320px !important;
+    } */
 }
 
 @media (min-width: 1555px) { 
