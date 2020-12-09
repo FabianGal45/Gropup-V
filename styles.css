@@ -11,6 +11,9 @@ a.nav-link:hover{
 }
 
 
+
+
+
 /* Main content */
 
 .main-background-image{
@@ -43,6 +46,9 @@ a.nav-link:hover{
 }
 
 
+
+
+
 /* Galleries buttons for the carousel */
 
 .galleries .btn{
@@ -58,6 +64,8 @@ a.nav-link:hover{
 .galleries{
     margin: 30px 0;
 }
+
+
 
 
 
@@ -131,6 +139,9 @@ a.carousel-control-prev, a.carousel-control-next{
 
 
 
+
+
+
 /* About John Doe */
 
 .about-John-Doe {
@@ -176,6 +187,8 @@ a.carousel-control-prev, a.carousel-control-next{
 
 
 
+
+
 /* Responsiveness */
 
 /* Mobile size */
@@ -204,6 +217,7 @@ a.carousel-control-prev, a.carousel-control-next{
     }
 
     
+
     /* Carousel */
     .carousel-inner{
         padding: 0;
@@ -236,6 +250,7 @@ a.carousel-control-prev, a.carousel-control-next{
     ol.carousel-indicators{
         margin: 0;
     }
+
 
 
     /* About John Doe */
