@@ -148,6 +148,33 @@ a.carousel-control-prev, a.carousel-control-next{
 
 
 
+/*Contact page - by Emiraldo Fernandes*/
+
+
+.fab{
+	color: blue;
+	font-size:50px;
+}
+
+.heading-for-contact-page{
+	text-align:center;
+}
+.contact-page-alin-center{
+	
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsiveness */
 
@@ -253,3 +280,4 @@ a.carousel-control-prev, a.carousel-control-next{
         margin: 30px 300px;
     }
 }
+
