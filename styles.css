@@ -103,6 +103,41 @@ a.carousel-control-prev, a.carousel-control-next{
 }
 
 
+.overlay-container {
+    position: relative;
+}
+
+
+.overlay-container .image-in-carousel{
+    display: block;
+}
+
+
+/* Inspired from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_title */
+
+.overlay-container .overlay{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align:center;
+    padding: 5px;
+    background-color: rgb(0, 0, 0, 0.8);
+    opacity: 0;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.overlay-container:hover .overlay{
+    opacity: 1;
+}
+
+.overlay-container .overlay p, .overlay-container .overlay a{
+    color: white;
+    margin-bottom: 0;
+}
+
+
+
 
 
 
@@ -198,6 +233,10 @@ a.carousel-control-prev, a.carousel-control-next{
 
     div.col{
         padding: 0;
+    }
+
+    .overlay-container .overlay{
+        padding-bottom:25px;
     }
 
     .hide-on-mobile{
