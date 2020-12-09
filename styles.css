@@ -4,6 +4,10 @@
 
 
 /* Navigation bar */
+.fab{
+    color: red;
+    font-size: 30px;;
+}
 .navbar{
     background-color: rgb(36, 36, 36);
 }
