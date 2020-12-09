@@ -131,30 +131,6 @@ a.carousel-control-prev, a.carousel-control-next{
 
 
 
-
-/* debugging */
-.red{
-    background-color: red;
-}
-
-.blue{
-    background-color: blue;
-}
-
-.yellow{
-    background-color: yellow;
-}
-
-.orange{
-    background-color: orange;
-}
-
-.green{
-    background-color: green;
-}
-
-
-
 /* About John Doe */
 
 .about-John-Doe {
@@ -243,6 +219,10 @@ a.carousel-control-prev, a.carousel-control-next{
 
     div.col{
         padding: 0;
+    }
+
+    .overlay-container .overlay{
+        padding-bottom:25px;
     }
 
     .hide-on-mobile{
