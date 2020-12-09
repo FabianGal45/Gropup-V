@@ -296,10 +296,6 @@ a.carousel-control-prev, a.carousel-control-next{
         margin: 30px 200px;
     }
 
-    /* I need to work more on this for  */
-    /* .carousel-item .col img{
-        width: 320px !important;
-    } */
 }
 
 @media (min-width: 1555px) { 
