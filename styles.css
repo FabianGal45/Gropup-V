@@ -2,8 +2,16 @@
 
 
 /* Navigation bar */
+.logo img{
+    height: 45px;
+}
+
 .navbar{
     background-color: rgb(36, 36, 36);
+}
+
+a.nav-link{
+    padding: 12px 0;
 }
 
 a.nav-link:hover{
