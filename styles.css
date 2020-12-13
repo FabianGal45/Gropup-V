@@ -1,6 +1,5 @@
 /* This entire file has been modified by Fabian Gal, unless specified by a comment otherwise */
 
-
 /* Navigation bar */
 .logo img{
     height: 35px;
@@ -77,7 +76,7 @@ a.nav-link:hover{
 
 
 
-/* Carousel with images */
+/* Carousel items and images */
 
 .carousel-item h3{
     color: white;
@@ -96,33 +95,24 @@ a.nav-link:hover{
     padding: 30px 0 25px 0;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-}
-
-a.carousel-control-prev, a.carousel-control-next{
-    width: 8%;
+a.carousel-control-prev, a.carousel-control-next{ 
+    width: 8%; /* Made the buttons a procentage to change according to the page size */
 }
 
 .blank-space{
     height: 50px;
-    /* background-color: rgb(240, 240, 240); */
 }
-
 
 .overlay-container {
     position: relative;
 }
 
-
 .overlay-container .image-in-carousel{
     display: block;
 }
 
-
+/* Showing the references of the images */
 /* Inspired from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_title */
-
 .overlay-container .overlay{
     position: absolute;
     bottom: 0;
@@ -176,6 +166,7 @@ a.carousel-control-prev, a.carousel-control-next{
     height: 349;
 }
 
+/* Call to action buttons in about section */
 .about-John-Doe .col-md a{
     padding: 10px 0;
     margin: 0 20px;
@@ -197,31 +188,39 @@ a.carousel-control-prev, a.carousel-control-next{
 
 
 
-/* Responsiveness */
+
+
+
+
+
+/* -- Responsiveness --
+   !!! Only add content in here if you need it to be responsive, any other css content should be placed above !!! 
+   All the content in here has been edited by Fabian Gal unless specified otherwise by a comment 
+*/
 
 /* Mobile size */
 @media (max-width: 600px) {
     .navbar .nav-item a{
-        padding: 20px 0;
+        padding: 20px 0; /* Increased the size of the navbar buttons to make them easyer to press and reduce the missclicks*/
     }
     
     .main-background-image{
         height: 540px;
-        background-image: url(./images/pexels-mateusz-salaciak-4275885-Small.jpg); /*Image taken from: https://www.pexels.com/photo/brown-wooden-house-on-green-grass-field-near-green-trees-and-mountains-4275885/ */
+        background-image: url(./images/pexels-mateusz-salaciak-4275885-Small.jpg); /* Change the image to a smaller size one to reduce the loading speed and because there is no need for a large image on mobile. Image taken from: https://www.pexels.com/photo/brown-wooden-house-on-green-grass-field-near-green-trees-and-mountains-4275885/ */
     }
 
     .main-content{
-        margin: 0;
+        margin: 0; /*Took away the margin to allow the images and text be displayed in the center*/
     }
 
     .main-content img{
         display: block;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto; /*placed the image on the center in the main content*/
     }
 
     .main-content h1{
-        text-align: center;
+        text-align: center; /* placed the text in center in the main content*/
     }
 
     
@@ -244,11 +243,11 @@ a.carousel-control-prev, a.carousel-control-next{
     }
 
     .overlay-container .overlay{
-        padding-bottom:25px;
+        padding-bottom: 25px; /* Added padding to raise up the text above the carousel indicators*/
     }
 
     .hide-on-mobile{
-        display: none !important;
+        display: none !important; /*This class hides the content/images I do not want on mobile*/ 
     }
 
     div.carousel-inner{
@@ -275,10 +274,12 @@ a.carousel-control-prev, a.carousel-control-next{
     }
 }
 
+
+
 /* Talet size */
 @media (max-width: 950px) { 
     .hide-on-tablet{
-        display: none !important;
+        display: none !important; /* Class that hides the content/row I do not want showing on tablet size, mostly to correspond with the wireframe*/
     }
 
     /* Placed this here as the image in the about section would overlap with the text */
@@ -287,27 +288,14 @@ a.carousel-control-prev, a.carousel-control-next{
     }
 }
 
-@media (min-width: 950px) { 
-    .galleries{
-        margin: 30px 100px;
-    }
 
-    .hide-on-tablet{
-        display: none;
-    }
-}
 
-/* Desktop/Laptop size */
+/* Laptop/Desktop size */
 
 @media (min-width: 1200px) { 
-    .galleries{
-        margin: 30px 200px;
-    }
 
 }
 
 @media (min-width: 1555px) { 
-    .galleries{
-        margin: 30px 300px;
-    }
+
 }
