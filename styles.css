@@ -2,8 +2,16 @@
 
 
 /* Navigation bar */
+.logo img{
+    height: 35px;
+}
+
 .navbar{
     background-color: rgb(36, 36, 36);
+}
+
+.navbar-brand{
+    padding: 0 0 !important; /* took away some unnecessary padding added in by bootstrap*/
 }
 
 a.nav-link:hover{
