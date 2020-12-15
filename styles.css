@@ -151,19 +151,13 @@ a.carousel-control-prev, a.carousel-control-next{
 /*Contact page - by Emiraldo Fernandes*/
 
 
-.fab{
-	color: blue;
-	font-size:50px;
+.margin-side{
+	margin: 0 5%;
 }
 
-.heading-for-contact-page{
-	text-align:center;
+form:placeholder{
+	test-align: center;
 }
-.contact-page-alin-center{
-	
-}	
-
-
 
 
 
@@ -246,7 +240,27 @@ a.carousel-control-prev, a.carousel-control-next{
     .about-John-Doe h5, .about-John-Doe .about p{
         text-align: center;
     }
-}
+	
+	
+	/* this was made by Emiraldo*/
+	/*For centering the placeholder*/
+	.placeholder{
+		
+		display: center;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+}	
+	
 
 @media (max-width: 950px) { 
     .hide-on-tablet{
