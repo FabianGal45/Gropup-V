@@ -95,7 +95,7 @@ a.nav-link:hover{
     padding: 30px 0 25px 0;
 }
 
-a.carousel-control-prev, a.carousel-control-next{ 
+a.carousel-control-prev, a.carousel-control-next{
     width: 8%; /* Made the buttons a procentage to change according to the page size */
 }
 
@@ -194,8 +194,8 @@ a.carousel-control-prev, a.carousel-control-next{
 
 
 /* -- Responsiveness --
-   !!! Only add content in here if you need it to be responsive, any other css content should be placed above !!! 
-   All the content in here has been edited by Fabian Gal unless specified otherwise by a comment 
+   !!! Only add content in here if you need it to be responsive, any other css content should be placed above !!!
+   All the content in here has been edited by Fabian Gal unless specified otherwise by a comment
 */
 
 /* Mobile size */
@@ -247,7 +247,7 @@ a.carousel-control-prev, a.carousel-control-next{
     }
 
     .hide-on-mobile{
-        display: none !important; /*This class hides the content/images I do not want on mobile*/ 
+        display: none !important; /*This class hides the content/images I do not want on mobile*/
     }
 
     div.carousel-inner{
@@ -280,8 +280,7 @@ a.carousel-control-prev, a.carousel-control-next{
 
 
 /* Talet size */
-@media (max-width: 950px) { 
->>>>>>> a84e727e41d7fb0fa4579d0a8146b3fc437a06d4
+@media (max-width: 950px) {
     .hide-on-tablet{
         display: none !important; /* Class that hides the content/row I do not want showing on tablet size, mostly to correspond with the wireframe*/
     }
@@ -292,47 +291,28 @@ a.carousel-control-prev, a.carousel-control-next{
     }
 }
 
-<<<<<<< HEAD
-@media (min-width: 950px) {
-    .galleries{
-        margin: 30px 100px;
-    }
-=======
->>>>>>> a84e727e41d7fb0fa4579d0a8146b3fc437a06d4
+
 
 
 /* Laptop/Desktop size */
 
-<<<<<<< HEAD
 @media (min-width: 1200px) {
-    .galleries{
-        margin: 30px 200px;
-    }
+
 }
 
 @media (min-width: 1555px) {
-    .galleries{
-        margin: 30px 300px;
-    }
-=======
-@media (min-width: 1200px) { 
 
 }
-
-@media (min-width: 1555px) { 
-
->>>>>>> a84e727e41d7fb0fa4579d0a8146b3fc437a06d4
-}
-.gallery page{
+.gallery{
     margin: 10px 50px;
 
 }
-.gallery page img{
+.gallery img{
     transition: 1s;
     padding:15px;
     width: 200px;
 }
-.gallery page img: hover{
+.gallery img: hover{
     filter: grayscale(100%);
     transform: scale(1.1);
 }
