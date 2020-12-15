@@ -1,9 +1,16 @@
 /* This entire file has been modified by Fabian Gal, unless specified by a comment otherwise */
 
-
 /* Navigation bar */
+.logo img{
+    height: 35px;
+}
+
 .navbar{
     background-color: rgb(36, 36, 36);
+}
+
+.navbar-brand{
+    padding: 0 0 !important; /* took away some unnecessary padding added in by bootstrap*/
 }
 
 a.nav-link:hover{
@@ -18,7 +25,7 @@ a.nav-link:hover{
 
 .main-background-image{
     height: 700px;
-    background-image: url(./images/pexels-mateusz-salaciak.jpg); /*Image taken from: https://www.pexels.com/photo/brown-wooden-house-on-green-grass-field-near-green-trees-and-mountains-4275885/ */
+    background-image: url(./images/pexels-mateusz-salaciak-4275885-Medium.jpg); /*Image taken from: https://www.pexels.com/photo/brown-wooden-house-on-green-grass-field-near-green-trees-and-mountains-4275885/ */
     background-size: cover;
     background-size: no-repeat;
     background-position-y: center;
@@ -26,6 +33,7 @@ a.nav-link:hover{
     background-position: fixed;
 
 }
+
 .main-content{
     color: white;
     margin-left: 10%;
@@ -68,7 +76,11 @@ a.nav-link:hover{
 
 
 
-/* Carousel with images */
+/* Carousel items and images */
+
+.carousel-item h3{
+    color: white;
+}
 
 .carousel-item .row{
     margin-bottom: 30px;
@@ -83,19 +95,45 @@ a.nav-link:hover{
     padding: 30px 0 25px 0;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-}
-
-a.carousel-control-prev, a.carousel-control-next{
-    width: 8%;
+a.carousel-control-prev, a.carousel-control-next{ 
+    width: 8%; /* Made the buttons a procentage to change according to the page size */
 }
 
 .blank-space{
     height: 50px;
-    /* background-color: rgb(240, 240, 240); */
 }
+
+.overlay-container {
+    position: relative;
+}
+
+.overlay-container .image-in-carousel{
+    display: block;
+}
+
+/* Showing the references of the images */
+/* Inspired from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_title */
+.overlay-container .overlay{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align:center;
+    padding: 5px;
+    background-color: rgb(0, 0, 0, 0.8);
+    opacity: 0;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.overlay-container:hover .overlay{
+    opacity: 1;
+}
+
+.overlay-container .overlay p, .overlay-container .overlay a{
+    color: white;
+    margin-bottom: 0;
+}
+
 
 
 
@@ -128,6 +166,7 @@ a.carousel-control-prev, a.carousel-control-next{
     height: 349;
 }
 
+/* Call to action buttons in about section */
 .about-John-Doe .col-md a{
     padding: 10px 0;
     margin: 0 20px;
@@ -149,29 +188,39 @@ a.carousel-control-prev, a.carousel-control-next{
 
 
 
-/* Responsiveness */
 
+
+
+
+
+/* -- Responsiveness --
+   !!! Only add content in here if you need it to be responsive, any other css content should be placed above !!! 
+   All the content in here has been edited by Fabian Gal unless specified otherwise by a comment 
+*/
+
+/* Mobile size */
 @media (max-width: 600px) {
     .navbar .nav-item a{
-        padding: 20px 0;
+        padding: 20px 0; /* Increased the size of the navbar buttons to make them easyer to press and reduce the missclicks*/
     }
 
     .main-background-image{
         height: 540px;
+        background-image: url(./images/pexels-mateusz-salaciak-4275885-Small.jpg); /* Change the image to a smaller size one to reduce the loading speed and because there is no need for a large image on mobile. Image taken from: https://www.pexels.com/photo/brown-wooden-house-on-green-grass-field-near-green-trees-and-mountains-4275885/ */
     }
 
     .main-content{
-        margin: 0;
+        margin: 0; /*Took away the margin to allow the images and text be displayed in the center*/
     }
 
     .main-content img{
         display: block;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto; /*placed the image on the center in the main content*/
     }
 
     .main-content h1{
-        text-align: center;
+        text-align: center; /* placed the text in center in the main content*/
     }
 
 
@@ -193,8 +242,12 @@ a.carousel-control-prev, a.carousel-control-next{
         padding: 0;
     }
 
+    .overlay-container .overlay{
+        padding-bottom: 25px; /* Added padding to raise up the text above the carousel indicators*/
+    }
+
     .hide-on-mobile{
-        display: none !important;
+        display: none !important; /*This class hides the content/images I do not want on mobile*/ 
     }
 
     div.carousel-inner{
@@ -221,9 +274,16 @@ a.carousel-control-prev, a.carousel-control-next{
     }
 }
 
+<<<<<<< HEAD
 @media (max-width: 950px) {
+=======
+
+
+/* Talet size */
+@media (max-width: 950px) { 
+>>>>>>> a84e727e41d7fb0fa4579d0a8146b3fc437a06d4
     .hide-on-tablet{
-        display: none !important;
+        display: none !important; /* Class that hides the content/row I do not want showing on tablet size, mostly to correspond with the wireframe*/
     }
 
     /* Placed this here as the image in the about section would overlap with the text */
@@ -232,16 +292,18 @@ a.carousel-control-prev, a.carousel-control-next{
     }
 }
 
+<<<<<<< HEAD
 @media (min-width: 950px) {
     .galleries{
         margin: 30px 100px;
     }
+=======
+>>>>>>> a84e727e41d7fb0fa4579d0a8146b3fc437a06d4
 
-    .hide-on-tablet{
-        display: none;
-    }
-}
 
+/* Laptop/Desktop size */
+
+<<<<<<< HEAD
 @media (min-width: 1200px) {
     .galleries{
         margin: 30px 200px;
@@ -252,6 +314,14 @@ a.carousel-control-prev, a.carousel-control-next{
     .galleries{
         margin: 30px 300px;
     }
+=======
+@media (min-width: 1200px) { 
+
+}
+
+@media (min-width: 1555px) { 
+
+>>>>>>> a84e727e41d7fb0fa4579d0a8146b3fc437a06d4
 }
 .gallery page{
     margin: 10px 50px;
