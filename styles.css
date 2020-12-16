@@ -1,6 +1,8 @@
-/* This entire file has been modified by Fabian Gal, unless specified by a comment otherwise */
+/* Most of this file has been modified by Fabian Gal, unless specified by a comment otherwise. 
 
-/* Navigation bar */
+Emiraldo Fernandes and Fawas Omoshonwon also contributed. Their contribution is noted in comments.*/
+
+/* Navigation bar - Fabian Gal*/
 .logo img{
     height: 35px;
 }
@@ -21,7 +23,7 @@ a.nav-link:hover{
 
 
 
-/* Main content */
+/* Main content - Fabian Gal*/
 
 .main-background-image{
     height: 700px;
@@ -56,7 +58,7 @@ a.nav-link:hover{
 
 
 
-/* Galleries buttons for the carousel */
+/* Galleries buttons for the carousel - homepage - Fabian Gal*/
 
 .galleries .btn{
     margin: 0 5px;
@@ -76,7 +78,7 @@ a.nav-link:hover{
 
 
 
-/* Carousel items and images */
+/* Carousel items and images - in homepage - Fabian Gal*/
 
 .carousel-item h3{
     color: white;
@@ -140,7 +142,7 @@ a.carousel-control-prev, a.carousel-control-next{
 
 
 
-/* About John Doe */
+/* About John Doe - Fabian Gal*/
 
 .about-John-Doe {
     background-color: rgb(241, 241, 241);
@@ -189,7 +191,6 @@ a.carousel-control-prev, a.carousel-control-next{
 
 /*Contact page - by Emiraldo Fernandes*/
 
-
 .margin-side{
 	margin: 0 5%;
 }
@@ -216,7 +217,8 @@ form:placeholder{
 
 /* -- Responsiveness --
    !!! Only add content in here if you need it to be responsive, any other css content should be placed above !!! 
-   All the content in here has been edited by Fabian Gal unless specified otherwise by a comment 
+
+   All the content in here has been edited by Fabian Gal unless specified otherwise by a comment.
 */
 
 /* Mobile size */
@@ -264,7 +266,7 @@ form:placeholder{
     }
 
     .overlay-container .overlay{
-        padding-bottom: 25px; /* Added padding to raise up the text above the carousel indicators*/
+        padding-bottom: 25px; /* Added padding to raise up the text above the carousel indicators in homepage*/
     }
 
     .hide-on-mobile{
@@ -318,6 +320,7 @@ form:placeholder{
 
 
 /* Talet size */
+/* made by Fabian Gal */
 @media (max-width: 950px) { 
     .hide-on-tablet{
         display: none !important; /* Class that hides the content/row I do not want showing on tablet size, mostly to correspond with the wireframe*/
