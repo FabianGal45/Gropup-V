@@ -241,6 +241,7 @@ a.carousel-control-prev, a.carousel-control-next{
 .test{
     position: relative;
     height: 159px;
+    width: 161px;
 }
 .game-grid-line{
     width: 14px;
