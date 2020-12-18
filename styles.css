@@ -218,7 +218,7 @@ a.carousel-control-prev, a.carousel-control-next{
     background-position-x: center;
 }
 
-.row-test{
+.row-test .test{
     float: left;
 }
 
@@ -251,6 +251,14 @@ middle 139
 
 .col3{
     width: 161px;
+}
+
+.game-hide-x{
+    display: none;
+}
+
+.game-hide-o{
+    display: none;
 }
 
 
