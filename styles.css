@@ -261,6 +261,10 @@ middle 139
     display: none;
 }
 
+.test:hover {
+    cursor: pointer;
+}
+
 
 
 /* -- Responsiveness --
