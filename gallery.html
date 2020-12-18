@@ -10,330 +10,201 @@
         <meta name="robots" content="follow">
         <meta name="keywords" content="Photography, freelance, weddings, family events, pictures, nature, portraits">
         <title>Gallery</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     </head>
     <body>
-        <!-- Bootstrap navbar -->
-        <!-- this nav bar has been taken from fabian html-->
-        <nav class="navbar navbar-expand-sm navbar-dark">
-            <a class="logo navbar-brand" href="index.html"><img src="images/logo3.png"></a> <!--This is the logo-->
-            <a class="current-page navbar-brand" href="index.html">Gallery</a> <!-- Here is going to be displayed the current page that the user is in-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation"> <!--This is the button that will show up once the website reaches mobile size-->
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="nav-right-side container flex-sm-nowrap justify-content-center">
-                <div class="collapse navbar-collapse" id="navbarNavDropdown"> <!-- This section will collapse on mobile size and can be triggered by the button above -->
-                    <ul class="navbar-nav nav-fill w-100">
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Home</a> <!-- These are the links that will redirect the user to the specified page -->
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="game.html">Game</a>
-                        </li>
-                    </ul>
+      <!-- Bootstrap navbar -->
+      <nav class="navbar navbar-expand-sm navbar-dark">
+          <a class="logo navbar-brand" href="index.html"><img src="images/logo3.png"></a> <!--This is the logo-->
+          <a class="current-page navbar-brand" href="index.html">Home page</a> <!-- Here is going to be displayed the current page that the user is in-->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation"> <!--This is the button that will show up once the website reaches mobile size-->
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="nav-right-side container flex-sm-nowrap justify-content-center">
+              <div class="collapse navbar-collapse" id="navbarNavDropdown"> <!-- This section will collapse on mobile size and can be triggered by the button above -->
+                  <ul class="navbar-nav nav-fill w-100">
+                      <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact</a> <!-- These are the links that will redirect the user to the specified page -->
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="gallery.html">Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="game.html">Game</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="FAQ.html">FAQ</a>
+                      </li>
+                  </ul>
 
-                </div>
-            </div>
-        </nav>
+              </div>
+          </div>
+      </nav>
+
 
 
         <!-- this code has been written by fawas -->
-
+          <br/>
 
         <div class="container">
-          <br>
-            <div class="row">
-              <div class="col-sm-5 col-md-4">
-                <a href="" data-toggle="modal" data-target="#exampleModal">
 
-                  <!--<a href="images/Portraits/Size-Medium/pexels-teddy-tavan-4890733.jpg">--> <img src="images/Portraits/Size-Small/pexels-teddy-tavan-4890733.jpg" class="w-100"></a> <!-- vertical image -->
-                  <!-- <a href="images/Family-Events/Size-Medium/pexels-vidal-balielo-jr-1682497.jpg"><img class="w-100" src="images/Family-Events/Size-Small/pexels-vidal-balielo-jr-1682497.jpg"></a> -->
-                </a>
+          <div class="row row-cols-4">
+            <!-- modal from W3schools -->
+            <a href="" data-toggle="modal" data-target="#myModal">
 
-                      <!-- Modal -->
-                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-center" id="exampleModalLabel" >Image Heading</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              <img src="images/Portraits/Size-Medium/pexels-teddy-tavan-4890733.jpg">
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
+
+              <div class="col">
+                <!-- <a href="images/Travel/Size-Medium/pexels-visionpic-net-2166553.jpg"> --> <img src="images/Travel/Size-Small/pexels-visionpic-net-2166553.jpg" class="w-100" ></a>
+              </div>
+            </a>
+
+            <div class="col">
+              <!--<a href="images/Travel/Size-Medium/pexels-nikolett-emmert-2908933.jpg"> --> <img src="images/Travel/Size-Small/pexels-nikolett-emmert-2908933.jpg" class="w-100"></a>
+            </div>
+
+            <div class="col">
+              <!--<a href="images/Weddings/Size-Medium/pexels-avonne-stalling-3916020.jpg"> --><img src="images/Weddings/Size-Small/pexels-avonne-stalling-3916020.jpg " class="w-100"></a>
+            </div>
+
+            <div class="col">
+              <!--<a href="images/Weddings/Size-Medium/pexels-emma-bauso-2253870.jpg"> --><img src="images/Weddings/Size-Small/pexels-emma-bauso-2253870.jpg" class="w-100"></a>
+            </div>
+
+            <br/>
+
+            <div class="col">
+              <!--<a href="images/Family-Events/Size-Medium/pexels-tatiana-syrikova-3934033.jpg"> --><img src="images/Family-Events/Size-Small/pexels-tatiana-syrikova-3934033.jpg" class="w-100"></a>
+            </div>
+
+            <div class="col">
+              <!--<a href="images/Family-Events/Size-Medium/pexels-vidal-balielo-jr-1682497.jpg"> --><img src="images/Family-Events/Size-Small/pexels-vidal-balielo-jr-1682497.jpg" class="w-100"></a>
+            </div>
+
+            <div class="col">
+              <!--<a href="images/Weddings/Size-Medium/pexels-pixabay-372176.jpg"> --><img src="images/Weddings/Size-Small/pexels-pixabay-372176.jpg" class="w-100"></a>
+            </div>
+
+            <div class="col">
+              <!--<a href="images/Family-Events/Size-Medium/pexels-c-technical-5961887.jpg"> --><img src="images/Family-Events/Size-Small/pexels-c-technical-5961887.jpg" class="w-100"></a>
+            </div>
+
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title text-center">Image Heading</h4>
+      </div>
+      <div class="modal-body">
+        <img src="images/Travel/Size-Medium/pexels-visionpic-net-2166553.jpg"
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+        </div>
+      </div>
+
+        <!-- <div class="row" id="gallery">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <img class="w-100" src="images/Travel/Size-Small/pexels-visionpic-net-2166553.jpg" ></a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <img class="w-100" src="/">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <img class="w-100" src="/">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <img class="w-100" src="/">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <img class="w-100" src="/">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <img class="w-100" src="/">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <img class="w-100" src="/">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <img class="w-100" src="/">
+          </div>
+      </div> -->
+      <!-- Footer/about section -->
+      <div class="about-John-Doe container-fluid"> <!-- This is the about section that shows at the bottom -->
+          <div class="row">
+              <div class="col-md-3 image d-none d-md-flex justify-content-end">
+                  <!-- John Doe's image -->
+                  <img src="images/This-Person-Does-Not-Exist1.jpg" class="rounded" alt="John Doe"><!-- Image taken from: https://thispersondoesnotexist.com/ -->
+              </div>
+
+              <div class="col-md about d-flex flex-column justify-content-between">
+                  <!-- Information about the photographer -->
+                  <div>
+                      <h5>About me</h5>
+                      <p>Hi, I am John Doe, I am freelance photographer and editor. I excel in capturing portraits and family events and providing the best customer experience according to my past clients.</p>
+                      <p>I like to travel and use my camera a lot, I have worked at weddings, for news companies and I travel a lot to grab amazing photos. I like taking pictures of the wildlife and nature.</p> <!-- Paragraph added as per client requirements -->
+                      <p>I enjoy what I am doing, I enjoy working with people and capturing their precious moments, be it a wedding, baby shower or just that happy day you look your best and want to capture the moment in a proffessional frame.</p>
+                  </div>
+                  <div class="d-flex">
+                      <a class="d-flex w-100 justify-content-center" href="gallery.html">See more images</a> <!-- Call to action button where the user will be redirected to the gallery page -->
+                  </div>
 
               </div>
 
-                <div class="col-sm-5 col-md-4">
-                  <a href="images/Travel/Size-Medium/pexels-visionpic-net-2166553.jpg"><img class="w-100" src="images/Travel/Size-Small/pexels-visionpic-net-2166553.jpg" ></a>
-                  <a href="images/Travel/Size-Medium/pexels-nikolett-emmert-2908933.jpg"><img class="w-100" src="images/Travel/Size-Small/pexels-nikolett-emmert-2908933.jpg"></a>
-                  <a href="images/Weddings/Size-Medium/pexels-avonne-stalling-3916020.jpg"><img class="w-100" src="images/Weddings/Size-Small/pexels-avonne-stalling-3916020.jpg "> </a>
-                </div>
+              <div class="col-md">
 
-                  <div class="col-sm-5 col-md-4">
+                  <!-- Working hours -->
+                  <h5>Working hours</h5>
+                  <table class="table table-hover"> <!--Bootstrap Table-->
+                      <tbody>
+                        <tr>
+                          <th scope="row">Monday</th>
+                          <td>10 a.m.</td>
+                          <td>6 p.m.</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Tuesday</th>
+                          <td>10 a.m.</td>
+                          <td>6 p.m.</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Wednesday</th>
+                          <td>10 a.m.</td>
+                          <td>6 p.m.</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Thursday</th>
+                          <td>10 a.m.</td>
+                          <td>6 p.m.</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Friday</th>
+                          <td>10 a.m.</td>
+                          <td>6 p.m.</td>
+                        </tr>
+                      </tbody>
+                  </table>
 
-                      <a href="images/Portraits/Size-Medium/pexels-ketut-subiyanto-4350057.jpg"><img class="w-100" src="images/Portraits/Size-Small/pexels-ketut-subiyanto-4350057.jpg"></a> <!-- vertical image -->
-
-                      <a href="images/Weddings/Size-Medium/pexels-emma-bauso-2253870.jpg"><img class="w-100" src="images/Weddings/Size-Small/pexels-emma-bauso-2253870.jpg"> </a>
-                  </div>
-
-                    <br/>
-
-                <div class="container">
-                    <div class="row align-items-start">
-                      <div class="col">
-                        <a href="images/Family-Events/Size-Medium/pexels-tatiana-syrikova-3934033.jpg"><img class="w-100" src="images/Family-Events/Size-Small/pexels-tatiana-syrikova-3934033.jpg"></a>
-                      </div>
-
-                   </div>
-                </div>
-
-            </div>
-          </div>
-
-
-
-        <!-- <div class="container">
-          <div class="row">
-            <div class="row">
-                <div class="col">
-
-                      <a href="images/Travel/Size-Medium/pexels-visionpic-net-2166553.jpg"><img class="w-100" src="images/Travel/Size-Small/pexels-visionpic-net-2166553.jpg" alt="V mountain" ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="row">
-              <div class="col">
-
-                  <a href="images/Travel/Size-Medium/pexels-nikolett-emmert-2908933.jpg"><img class="w-100" src="images/Travel/Size-Small/pexels-nikolett-emmert-2908933.jpg"></a>
+                  <a class="d-flex justify-content-center" href="contact.html">Contact me</a> <!-- Call to action button where the user will be redirected to the cotact page -->
+              </div>
 
           </div>
-        </div>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="row">
-            <div class="col">
-
-                <a href="images/Weddings/Size-Medium/pexels-avonne-stalling-3916020.jpg"><img class="w-100" src="images/Weddings/Size-Small/pexels-avonne-stalling-3916020.jpg "> </a>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="row">
-          <div class="col">
-
-              <a href="images/Weddings/Size-Medium/pexels-emma-bauso-2253870.jpg"><img class="w-100" src="images/Weddings/Size-Small/pexels-emma-bauso-2253870.jpg"> </a>
-
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="row">
-          <div class="col">
-
-              <a href="images/Portraits/Size-Medium/pexels-teddy-tavan-4890733.jpg"><img class="w-100" src="images/Portraits/Size-Small/pexels-teddy-tavan-4890733.jpg"></a>
-
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="row">
-          <div class="col">
-
-              <a href="images/Portraits/Size-Medium/pexels-ketut-subiyanto-4350057.jpg"><img class="w-100" src="images/Portraits/Size-Small/pexels-ketut-subiyanto-4350057.jpg"></a>
-
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="row">
-          <div class="col">
-
-              <a href="images/Family-Events/Size-Medium/pexels-vidal-balielo-jr-1682497.jpg"><img class="w-100" src="images/Family-Events/Size-Small/pexels-vidal-balielo-jr-1682497.jpg"></a>
-
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="row">
-          <div class="col">
-
-              <a href="images/Family-Events/Size-Medium/pexels-tatiana-syrikova-3934033.jpg"><img class="w-100" src="images/Family-Events/Size-Small/pexels-tatiana-syrikova-3934033.jpg"></a>
-
-      </div>
-    </div>
-  </div>
-  </div>
-
-
-                <div class="col hide-on-mobile">
-                    <div class="overlay-container">
-                        <div class="image-in-carousel">
-                            <img src="images/Family-Events/Size-Small/pexels-julia-hym-5437464.jpg" class="w-100" alt="">
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col hide-on-mobile">
-                            <a href="images/Portraits/Size-Medium/pexels-teddy-tavan-4890733.jpg"><img class="w-100" src="images/Portraits/Size-Small/pexels-teddy-tavan-4890733.jpg"></a>
-
-                            <a href="images/Portraits/Size-Medium/pexels-ketut-subiyanto-4350057.jpg"><img class="w-100" src="images/Portraits/Size-Small/pexels-ketut-subiyanto-4350057.jpg"></a>
-
-                            <a href="images/Family-Events/Size-Medium/pexels-vidal-balielo-jr-1682497.jpg"><img class="w-100" src="images/Family-Events/Size-Small/pexels-vidal-balielo-jr-1682497.jpg"></a>
-
-                            <a href="images/Family-Events/Size-Medium/pexels-tatiana-syrikova-3934033.jpg"><img class="w-100" src="images/Family-Events/Size-Small/pexels-tatiana-syrikova-3934033.jpg"></a>
-                          </div> -->
-
-
-
-            <!-- <div class="col-md">
-              <a href="images/Travel/Size-Medium/pexels-visionpic-net-2166553.jpg"><img class="w-100" src="images/Travel/Size-Small/pexels-visionpic-net-2166553.jpg"></a>
-
-              <a href="images/Travel/Size-Medium/pexels-nikolett-emmert-2908933.jpg"><img class="w-100" src="images/Travel/Size-Small/pexels-nikolett-emmert-2908933.jpg"></a>
-
-              <a href="images/Weddings/Size-Medium/pexels-avonne-stalling-3916020.jpg"><img class="w-100" src="images/Weddings/Size-Small/pexels-avonne-stalling-3916020.jpg "> </a>
-
-              <a href="images/Weddings/Size-Medium/pexels-emma-bauso-2253870.jpg"><img class="w-100" src="images/Weddings/Size-Small/pexels-emma-bauso-2253870.jpg"> </a>
-
-            </div>
-            <div class="col-md">
-              <a href="images/Portraits/Size-Medium/pexels-teddy-tavan-4890733.jpg"><img class="w-100" src="images/Portraits/Size-Small/pexels-teddy-tavan-4890733.jpg"></a>
-
-              <a href="images/Portraits/Size-Medium/pexels-ketut-subiyanto-4350057.jpg"><img class="w-100" src="images/Portraits/Size-Small/pexels-ketut-subiyanto-4350057.jpg"></a>
-
-              <a href="images/Family-Events/Size-Medium/pexels-vidal-balielo-jr-1682497.jpg"><img class="w-100" src="images/Family-Events/Size-Small/pexels-vidal-balielo-jr-1682497.jpg"></a>
-
-              <a href="images/Family-Events/Size-Medium/pexels-tatiana-syrikova-3934033.jpg"><img class="w-100" src="images/Family-Events/Size-Small/pexels-tatiana-syrikova-3934033.jpg"></a>
-            </div>
-          </div>
-        </div> -->
-
-    <!-- <div class "row">
-        <div class="container">
-          <div class="gallery">
-
-            <h2> Welcome to the page </h2>
-
-              <a href="images/Travel/Size-Medium/pexels-visionpic-net-2166553.jpg"><img src="images/Travel/Size-Small/pexels-visionpic-net-2166553.jpg"></a>
-
-              <a href="images/Travel/Size-Medium/pexels-nikolett-emmert-2908933.jpg"><img src="images/Travel/Size-Small/pexels-nikolett-emmert-2908933.jpg"></a>
-
-              <a href="images/Weddings/Size-Medium/pexels-avonne-stalling-3916020.jpg"><img src="images/Weddings/Size-Small/pexels-avonne-stalling-3916020.jpg "> </a>
-
-              <a href="images/Weddings/Size-Medium/pexels-emma-bauso-2253870.jpg"><img src="images/Weddings/Size-Small/pexels-emma-bauso-2253870.jpg"> </a>
-
-              <a href="images/Portraits/Size-Medium/pexels-teddy-tavan-4890733.jpg"><img src="images/Portraits/Size-Small/pexels-teddy-tavan-4890733.jpg"></a>
-
-              <a href="images/Portraits/Size-Medium/pexels-ketut-subiyanto-4350057.jpg"><img src="images/Portraits/Size-Small/pexels-ketut-subiyanto-4350057.jpg"></a>
-
-              <a href="images/Family-Events/Size-Medium/pexels-vidal-balielo-jr-1682497.jpg"><img src="images/Family-Events/Size-Small/pexels-vidal-balielo-jr-1682497.jpg"></a>
-
-              <a href="images/Family-Events/Size-Medium/pexels-tatiana-syrikova-3934033.jpg"><img src="images/Family-Events/Size-Small/pexels-tatiana-syrikova-3934033.jpg"></a>
-          </div>
-        </div>
-    </div> -->
-
-
-
-<div class="blank-space"></div> <!-- I created this div for simplicity. I don't want to remmber each time what size was the margin I previously had in case I need a space like this again. I can just copy and paste this small div-->
-
-<div class="about-John-Doe container-fluid"> <!-- This is the about section that shows at the bottom -->
-    <div class="row">
-        <div class="col-md-3 image d-none d-md-flex justify-content-end">
-            <!-- John Doe's image -->
-            <img src="images/This-Person-Does-Not-Exist1.jpg" class="rounded" alt="John Doe"><!-- Image taken from: https://thispersondoesnotexist.com/ -->
-        </div>
-
-        <div class="col-md about d-flex flex-column justify-content-between">
-            <!-- Information about the photographer -->
-            <div>
-                <h5>About me</h5>
-                <p>Hi, I am John Doe, I am freelance photographer and editor. I excel in capturing portraits and family events and providing the best customer experience according to my past clients.</p>
-                <p>I like to travel and use my camera a lot, I have worked at weddings, for news companies and I travel a lot to grab amazing photos. I like taking pictures of the wildlife and nature.</p> <!-- Paragraph added as per client requirements -->
-                <p>I enjoy what I am doing, I enjoy working with people and capturing their precious moments, be it a wedding, baby shower or just that happy day you look your best and want to capture the moment in a proffessional frame.</p>
-            </div>
-            <div class="d-flex">
-                <a class="d-flex w-100 justify-content-center" href="gallery.html">See more images</a> <!-- Call to action button where the user will be redirected to the gallery page -->
-            </div>
-
-        </div>
-
-        <div class="col-md">
-
-            <!-- Working hours -->
-            <h5>Working hours</h5>
-            <table class="table table-hover"> <!--Bootstrap Table-->
-                <tbody>
-                  <tr>
-                    <th scope="row">Monday</th>
-                    <td>10 a.m.</td>
-                    <td>6 p.m.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Tuesday</th>
-                    <td>10 a.m.</td>
-                    <td>6 p.m.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Wednesday</th>
-                    <td>10 a.m.</td>
-                    <td>6 p.m.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Thursday</th>
-                    <td>10 a.m.</td>
-                    <td>6 p.m.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Friday</th>
-                    <td>10 a.m.</td>
-                    <td>6 p.m.</td>
-                  </tr>
-                </tbody>
-            </table>
-
-            <a class="d-flex justify-content-center" href="contact.html">Contact me</a> <!-- Call to action button where the user will be redirected to the cotact page -->
-        </div>
-
-    </div>
-</div>
 
         <!-- Bootstrap Scripts -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
