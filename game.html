@@ -16,43 +16,96 @@
 		
     </head>
     <body>
-        <div>
-            <div id="r1c1">
+        <!-- Bootstrap navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <a class="logo navbar-brand" href="index.html"><img src="images/logo3.png"></a> <!--This is the logo-->
+            <a class="current-page navbar-brand" href="game.html">Game</a> <!-- Here is going to be displayed the current page that the user is in-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation"> <!--This is the button that will show up once the website reaches mobile size-->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="nav-right-side container flex-sm-nowrap justify-content-center">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown"> <!-- This section will collapse on mobile size and can be triggered by the button above -->
+                    <ul class="navbar-nav nav-fill w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a> <!-- These are the links that will redirect the user to the specified page -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a> 
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="game.html">Game</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="FAQ.html">FAQ</a>
+                        </li>
+                    </ul>
                 
+                </div>
             </div>
+        </nav>
+        
+        <div class="blank-space"></div>
 
-            <div id="r1c2">
-
+        <!-- Made by Fabian gal -->
+        <div class="game-grid">
+            <div class="row-test">
+                <div id="r1c1" class="row1 col1 test">
+                    <img class="o" src="images/Game-images/o.png">
+                    <img class="x"src="images/Game-images/x.png">
+                </div>
+    
+                <div id="r1c2" class="row1 col2 test d-flex justify-content-center">
+                    <img src="images/Game-images/o.png">
+                    <img src="images/Game-images/x.png">
+                </div>
+    
+                <div id="r1c3" class="row1 col3 test d-flex justify-content-center">
+                    <img src="images/Game-images/o.png">
+                    <img src="images/Game-images/x.png">
+                </div>
             </div>
-
-            <div id="r1c3">
-
+            <div class="row-test">
+                <div id="r1c1" class="row2 col1 test d-flex justify-content-center">
+                    <img src="images/Game-images/o.png">
+                    <img src="images/Game-images/x.png">
+                </div>
+    
+                <div id="r1c2" class="row2 col2 test d-flex justify-content-center">
+                    <img src="images/Game-images/o.png">
+                    <img src="images/Game-images/x.png">
+                </div>
+    
+                <div id="r1c3" class="row2 col3 test d-flex justify-content-center">
+                    <img src="images/Game-images/o.png">
+                    <img src="images/Game-images/x.png">
+                </div>
             </div>
-
-            <div id="r2c1">
-
-            </div>
-
-            <div id="r2c2">
-
-            </div>
-
-            <div id="r2c3">
-
-            </div>
-
-            <div id="r3c1">
-
-            </div>
-
-            <div id="r3c2">
-
-            </div>
-            <div id="r3c3">
-
+            <div class="row-test">
+                <div id="r1c1" class="row3 col1 test d-flex justify-content-center">
+                    <img src="images/Game-images/o.png">
+                    <img src="images/Game-images/x.png">
+                </div>
+    
+                <div id="r1c2" class="row3 col2 test d-flex justify-content-center">
+                    <img src="images/Game-images/o.png">
+                    <img src="images/Game-images/x.png">
+                </div>
+    
+                <div id="r1c3" class="row3 col3 test d-flex justify-content-center">
+                    <img src="images/Game-images/o.png">
+                    <img src="images/Game-images/x.png">
+                </div>
             </div>
         </div>
+        
+
+
+
 
         
+        <!-- Bootstrap Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     </body>
 </html>
