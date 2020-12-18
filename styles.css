@@ -3,6 +3,10 @@
 Emiraldo Fernandes and Fawas Omoshonwon also contributed. Their contribution is noted in comments.*/
 
 /* Navigation bar - Fabian Gal*/
+body, html {
+  height: 100%;
+}
+
 .logo img{
     height: 35px;
 }
@@ -195,32 +199,83 @@ a.carousel-control-prev, a.carousel-control-next{
 	margin: 0 5%;
 }
 
-
-
-
-
-
-
-/*fawas css */
+/* Gallery page - Fawas Omoshonwon*/
+.container.gallery-container {
+    border-radius: 0;
+}
 
 .tz-gallery .lightbox img {
     width: 100%;
     margin-bottom: 30px;
     transition: 0.2s ease-in-out;
-
 }
-
-
 
 .tz-gallery img {
     border-radius: 4px;
 }
 
 
-.container.gallery-container {
-    border-radius: 0;
+
+
+
+
+
+/* Tic Tac Toe Game  - Fabian Gal*/
+
+
+
+.game-grid{
+    height: 483px;
+    width: 483px;
+    margin: 0 auto;
+    background-image: url(./images/Game-images/grid.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
 }
 
+.row-test .test{
+    float: left;
+}
+
+.test{
+    position: relative;
+    height: 159px;
+}
+.game-grid-line{
+    width: 14px;
+}
+/* top 158 marbot 14
+middle 139
+*/
+
+.test img{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col1, .row2.col1{
+    width: 161px;
+}
+
+.col2{
+    width: 161px;
+}
+
+.col3{
+    width: 161px;
+}
+
+.game-hide-x{
+    display: none;
+}
+
+.game-hide-o{
+    display: none;
+}
 
 
 
