@@ -1,4 +1,4 @@
-/* Most of this file has been modified by Fabian Gal, unless specified by a comment otherwise. 
+/* Most of this file has been modified by Fabian Gal, unless specified by a comment otherwise.
 
 Emiraldo Fernandes and Fawas Omoshonwon also contributed. Their contribution is noted in comments.*/
 
@@ -37,7 +37,7 @@ a.nav-link:hover{
     background-position-y: center;
     background-position-x: center;
     background-position: fixed;
-    
+
 }
 
 .main-content{
@@ -101,7 +101,7 @@ a.nav-link:hover{
     padding: 30px 0 25px 0;
 }
 
-a.carousel-control-prev, a.carousel-control-next{ 
+a.carousel-control-prev, a.carousel-control-next{
     width: 8%; /* Made the buttons a procentage to change according to the page size */
 }
 
@@ -181,13 +181,13 @@ a.carousel-control-prev, a.carousel-control-next{
     background-color: rgb(36, 36, 36);
     color: white;
     opacity: 0.5;
-} 
+}
 
 .about-John-Doe .col-md a:hover{
     text-decoration: none;
     opacity: 1;
     transition-duration: 0.3s;
-} 
+}
 
 
 
@@ -199,6 +199,21 @@ a.carousel-control-prev, a.carousel-control-next{
 	margin: 0 5%;
 }
 
+/* Gallery page - Fawas Omoshonwon*/
+.container.gallery-container {
+    border-radius: 0;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
 
 
 
@@ -208,11 +223,12 @@ a.carousel-control-prev, a.carousel-control-next{
 /* Tic Tac Toe Game  - Fabian Gal*/
 
 
+
 .game-grid{
     height: 483px;
     width: 483px;
     margin: 0 auto;
-    background-image: url(./images/Game-images/grid.png); 
+    background-image: url(./images/Game-images/grid.png);
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: center;
@@ -227,7 +243,7 @@ a.carousel-control-prev, a.carousel-control-next{
     height: 159px;
 }
 .game-grid-line{
-    width: 14px; 
+    width: 14px;
 }
 /* top 158 marbot 14
 middle 139
@@ -237,8 +253,8 @@ middle 139
     position: absolute;
     top: 40px;
     right: 40px;
-    margin-left: auto; 
-    margin-right: auto; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .col1, .row2.col1{
@@ -267,10 +283,17 @@ middle 139
 
 
 
-/* -- Responsiveness --
-   !!! Only add content in here if you need it to be responsive, any other css content should be placed above !!! 
 
-   All the content in here has been edited by Fabian Gal unless specified otherwise by a comment.
+
+
+
+
+
+
+
+/* -- Responsiveness --
+   !!! Only add content in here if you need it to be responsive, any other css content should be placed above !!!
+   All the content in here has been edited by Fabian Gal unless specified otherwise by a comment
 */
 
 /* Mobile size */
@@ -278,7 +301,7 @@ middle 139
     .navbar .nav-item a{
         padding: 20px 0; /* Increased the size of the navbar buttons to make them easyer to press and reduce the missclicks*/
     }
-    
+
     .main-background-image{
         height: 540px;
         background-image: url(./images/pexels-mateusz-salaciak-4275885-Small.jpg); /* Change the image to a smaller size one to reduce the loading speed and because there is no need for a large image on mobile. Image taken from: https://www.pexels.com/photo/brown-wooden-house-on-green-grass-field-near-green-trees-and-mountains-4275885/ */
@@ -298,7 +321,7 @@ middle 139
         text-align: center; /* placed the text in center in the main content*/
     }
 
-    
+
 
     /* Carousel */
     .carousel-inner{
@@ -322,13 +345,13 @@ middle 139
     }
 
     .hide-on-mobile{
-        display: none !important; /*This class hides the content/images I do not want on mobile*/ 
+        display: none !important; /*This class hides the content/images I do not want on mobile*/
     }
 
     div.carousel-inner{
         padding: 0;
     }
-    
+
     ol.carousel-indicators{
         margin: 0;
     }
@@ -343,37 +366,33 @@ middle 139
     .about-John-Doe .about{
         margin-bottom: 30px;
     }
-    
+
     .about-John-Doe h5, .about-John-Doe .about p{
         text-align: center;
     }
-	
-	
+
+
 	/* this was made by Emiraldo*/
 	/*For centering the placeholder*/
 	.placeholder{
-		
+
 		display: center;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-	
-}	
-	
 
 
 
-/* Talet size */
-/* made by Fabian Gal */
-@media (max-width: 950px) { 
+
+
+
+
+
+
+
+
+}
+
+
+@media (max-width: 950px) {
     .hide-on-tablet{
         display: none !important; /* Class that hides the content/row I do not want showing on tablet size, mostly to correspond with the wireframe*/
     }
@@ -386,13 +405,13 @@ middle 139
 
 
 
+
 /* Laptop/Desktop size */
 
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 
 }
 
-@media (min-width: 1555px) { 
+@media (min-width: 1555px) {
 
 }
-
