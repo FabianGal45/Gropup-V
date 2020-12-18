@@ -258,24 +258,12 @@ middle 139
     margin-right: auto;
 }
 
-.col1, .row2.col1{
-    width: 161px;
-}
-
-.col2{
-    width: 161px;
-}
-
-.col3{
-    width: 161px;
-}
-
 .game-hide-x{
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .game-hide-o{
-    opacity: 0.3;
+    display: none;
 }
 
 .test:hover {
