@@ -1,8 +1,8 @@
 // Fabian Gal
 
 function myFunction() {
-	var showOnClick = document.getElementById("r1c1");
-	showOnClick.querySelector("img.x").classList.remove("game-hide-x");
+	
+	
 }
 
 

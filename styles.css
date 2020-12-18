@@ -270,11 +270,11 @@ middle 139
 }
 
 .game-hide-x{
-    display: none;
+    opacity: 0.5;
 }
 
 .game-hide-o{
-    display: none;
+    opacity: 0.3;
 }
 
 .test:hover {
