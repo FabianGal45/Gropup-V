@@ -309,7 +309,7 @@ div.disabled *:focus { outline: 0; }
 
     .main-background-image{
         height: 540px;
-        background-image: url(./images/pexels-mateusz-salaciak-4275885-Small.jpg); /* Change the image to a smaller size one to reduce the loading speed and because there is no need for a large image on mobile. Image taken from: https://www.pexels.com/photo/brown-wooden-house-on-green-grass-field-near-green-trees-and-mountains-4275885/ */
+        background-image: url(./images/pexels-mateusz-salaciak-4275885-Small.webp); /* Change the image to a smaller size one to reduce the loading speed and because there is no need for a large image on mobile. Image taken from: https://www.pexels.com/photo/brown-wooden-house-on-green-grass-field-near-green-trees-and-mountains-4275885/ */
     }
 
     .main-content{

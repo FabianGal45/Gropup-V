@@ -284,6 +284,10 @@ function checkForWinPlayer(){
         console.log("Player won, using X2 !!!");
         blockPlayerFromSelecting();
         playerWon = true;
+    }else if (playebleSlots.length == 0){
+        console.log("Draw");
+        document.getElementById("winningText").innerHTML = "Draw."
+        $('#modal').modal('show');
     }else{
         setTimeout(function(){ computerTurn(); }, 400); //This lets the computer to play after 400 ms If the player did not win. 
         showOnClick.classList.add("disabled"); //this prevents the cell from being clicked again
@@ -293,11 +297,11 @@ function checkForWinPlayer(){
         $('#modal').modal('show');
         console.log("This will trigger the  modal");
     }
-    if (playebleSlots.length == 0){
-        console.log("Draw");
-        document.getElementById("winningText").innerHTML = "Draw."
-        $('#modal').modal('show');
-    } 
+    // if (playebleSlots.length == 0){
+    //     console.log("Draw");
+    //     document.getElementById("winningText").innerHTML = "Draw."
+    //     $('#modal').modal('show');
+    // } 
 }
 // this fuction will tell which combination the computer won with
 function checkForWinComputer(){
