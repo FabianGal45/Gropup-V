@@ -1,6 +1,16 @@
 /* Most of this file has been modified by Fabian Gal, unless specified by a comment otherwise.
 
 Emiraldo Fernandes and Fawas Omoshonwon also contributed. Their contribution is noted in comments.*/
+/* Global */
+
+p, a{
+    font-family: 'Caladea', serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Bitter', serif;
+}
+
 
 /* Navigation bar - Fabian Gal*/
 body, html {
@@ -22,8 +32,6 @@ body, html {
 a.nav-link:hover{
     background-color: #2d2d2d;
 }
-
-
 
 
 
