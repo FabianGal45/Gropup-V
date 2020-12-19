@@ -45,6 +45,21 @@ function oneX() {
     if (index > -1) {
         playebleSlots.splice(index, 1);
     }
+    $(document).ready(function(){
+
+        var clickDisabled = false;
+        $('#click').click(function(){
+           if (clickDisabled)
+              return;
+     
+           // do your real click processing here
+     
+           clickDisabled = true;
+           setTimeout(function(){clickDisabled = false;}, 400);
+        });
+    });
+    setTimeout(function(){ computerTurn(); }, 400); //This lets the computer play but adds some delay so it won't be instantaneous.
+    
 }
 function twoX() {
 	var showOnClick = document.getElementById("2");
@@ -56,6 +71,7 @@ function twoX() {
     if (index > -1) {
         playebleSlots.splice(index, 1);
     }
+    setTimeout(function(){ computerTurn(); }, 400);
 }
 function threeX() {
 	var showOnClick = document.getElementById("3");
@@ -67,6 +83,7 @@ function threeX() {
     if (index > -1) {
         playebleSlots.splice(index, 1);
     }
+    setTimeout(function(){ computerTurn(); }, 400);
 }
 
 function fourX() {
@@ -79,7 +96,7 @@ function fourX() {
     if (index > -1) {
         playebleSlots.splice(index, 1);
     }
-
+    setTimeout(function(){ computerTurn(); }, 400);
 }
 function fiveX() {
 	var showOnClick = document.getElementById("5");
@@ -91,7 +108,7 @@ function fiveX() {
     if (index > -1) {
         playebleSlots.splice(index, 1);
     }
-
+    setTimeout(function(){ computerTurn(); }, 400);
 }
 function sixX() {
 	var showOnClick = document.getElementById("6");
@@ -103,6 +120,7 @@ function sixX() {
     if (index > -1) {
         playebleSlots.splice(index, 1);
     }
+    setTimeout(function(){ computerTurn(); }, 400);
 }
 
 function sevenX() {
@@ -115,6 +133,7 @@ function sevenX() {
     if (index > -1) {
         playebleSlots.splice(index, 1);
     }
+    setTimeout(function(){ computerTurn(); }, 400);
 }
 function eightX() {
 	var showOnClick = document.getElementById("8");
@@ -126,6 +145,7 @@ function eightX() {
     if (index > -1) {
         playebleSlots.splice(index, 1);
     }
+    setTimeout(function(){ computerTurn(); }, 400);
 }
 function nineX() {
 	var showOnClick = document.getElementById("9");
@@ -137,6 +157,7 @@ function nineX() {
     if (index > -1) {
         playebleSlots.splice(index, 1);
     }
+    setTimeout(function(){ computerTurn(); }, 400);
 }
 
 
@@ -173,14 +194,14 @@ function refreshButton() {
 	
 	// Emiraldo Fernandes
 	
-	if winningCombination = [
-  [0, 1, 2],
-  [3, 4, 5],
-  [6, 7, 8],
-  [0, 3, 6],
-  [1, 4, 7],
-  [2, 5, 8],
-  [0, 4, 8],
-  [2, 4, 6]
-]
-document.write('Winner');
+// 	if winningCombination = [
+//   [0, 1, 2],
+//   [3, 4, 5],
+//   [6, 7, 8],
+//   [0, 3, 6],
+//   [1, 4, 7],
+//   [2, 5, 8],
+//   [0, 4, 8],
+//   [2, 4, 6]
+// ]
+// document.write('Winner');
