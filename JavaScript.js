@@ -22,7 +22,7 @@
 //   array.splice(index, 1);
 // }
 
-// console.log(array); 
+// console.log(array);
 
 
 
@@ -72,7 +72,7 @@ function fourX() {
     if (index > -1) {
         playebleSlots.splice(index, 1);
     }
-    
+
 }
 function fiveX() {
 	var showOnClick = document.getElementById("5");
@@ -82,7 +82,7 @@ function fiveX() {
     if (index > -1) {
         playebleSlots.splice(index, 1);
     }
- 
+
 }
 function sixX() {
 	var showOnClick = document.getElementById("6");
@@ -122,7 +122,7 @@ function nineX() {
     }
 }
 
-// Fawas Omoshonwon
+
 
 
 
