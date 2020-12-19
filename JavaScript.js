@@ -29,18 +29,18 @@
 
 
 
-const playebleSlots = [1,2,3,4,5,6,7,8,9];
-console.log(playebleSlots);
+const playebleSlots = [1,2,3,4,5,6,7,8,9]; //This is the enrire grid 1 to 9
+console.log(playebleSlots); // All console logs are used to observe the progress and errors
 
-var playerChoice;
-var playerSplice;
-var index;
+var index; // This index is being used to remove a specific number from the array in the functions oneX,twoX...
 
 function oneX() {
-	var showOnClick = document.getElementById("1"); // changing the number will change the position that the x will apear in but you can click anywhere with the specific funtion
-    showOnClick.querySelector("img.x").classList.remove("game-hide-x");
-    console.log("you have picked slot no: 1");
-    index = playebleSlots.indexOf(1);
+	var showOnClick = document.getElementById("1"); //this will look for the id of 1
+    showOnClick.querySelector("img.x").classList.remove("game-hide-x");// this will look inside the id of 1 for an image with the calass of x and remove the class of game-hide-x to reveal the x img.
+
+    console.log("you have picked slot no: 1"); //Checking the code 
+
+    index = playebleSlots.indexOf(1); //this will look for the number 1 inside the playebleSlots and will take it away.
     if (index > -1) {
         playebleSlots.splice(index, 1);
     }
@@ -48,7 +48,9 @@ function oneX() {
 function twoX() {
 	var showOnClick = document.getElementById("2");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
+
     console.log("you have picked slot no: 2");
+
     index = playebleSlots.indexOf(2);
     if (index > -1) {
         playebleSlots.splice(index, 1);
@@ -57,7 +59,9 @@ function twoX() {
 function threeX() {
 	var showOnClick = document.getElementById("3");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
+
     console.log("you have picked slot no: 3");
+
     index = playebleSlots.indexOf(3);
     if (index > -1) {
         playebleSlots.splice(index, 1);
@@ -67,7 +71,9 @@ function threeX() {
 function fourX() {
 	var showOnClick = document.getElementById("4");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
+
     console.log("you have picked slot no: 4");
+
     index = playebleSlots.indexOf(4);
     if (index > -1) {
         playebleSlots.splice(index, 1);
@@ -77,7 +83,9 @@ function fourX() {
 function fiveX() {
 	var showOnClick = document.getElementById("5");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
+
     console.log("you have picked slot no: 5");
+
     index = playebleSlots.indexOf(5);
     if (index > -1) {
         playebleSlots.splice(index, 1);
@@ -87,7 +95,9 @@ function fiveX() {
 function sixX() {
 	var showOnClick = document.getElementById("6");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
+
     console.log("you have picked slot no: 6");
+
     index = playebleSlots.indexOf(6);
     if (index > -1) {
         playebleSlots.splice(index, 1);
@@ -97,7 +107,9 @@ function sixX() {
 function sevenX() {
 	var showOnClick = document.getElementById("7");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
+    
     console.log("you have picked slot no: 7");
+
     index = playebleSlots.indexOf(7);
     if (index > -1) {
         playebleSlots.splice(index, 1);
@@ -106,7 +118,9 @@ function sevenX() {
 function eightX() {
 	var showOnClick = document.getElementById("8");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
+
     console.log("you have picked slot no: 8");
+
     index = playebleSlots.indexOf(8);
     if (index > -1) {
         playebleSlots.splice(index, 1);
@@ -115,7 +129,9 @@ function eightX() {
 function nineX() {
 	var showOnClick = document.getElementById("9");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
+    
     console.log("you have picked slot no: 9");
+
     index = playebleSlots.indexOf(9);
     if (index > -1) {
         playebleSlots.splice(index, 1);
