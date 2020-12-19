@@ -230,38 +230,6 @@ function computerTurn(){
 }
 
 
-//Fabian Gal -
-
-//This blocks the player from selecting any other slot while the computer's turn is due.
-function blockPlayerFromSelecting(){
-    // console.log("Player can no longer select.");
-    for( i=0; i<playebleSlots.length; i++){
-        var disableSlots = playebleSlots[i];
-        document.getElementById(disableSlots).classList.add("disabled");
-    }
-}
-
-//  This removes the desable class from all the ids that are left in the playeblle slots and allows the player to continue playing.
-function allowPlayerToSelect(){
-    for( i=0; i<playebleSlots.length; i++){
-        var disableSlots = playebleSlots[i];
-        document.getElementById(disableSlots).classList.remove("disabled");
-    }
-    // console.log("Player can now select a box.");
-}
-
-function checkButton(){
-    console.log("PlayerChoices: ["+playerChoices+"]");
-    console.log("Computer Choices: ["+computerChoices+"]");
-}
-
-// Fawas Omoshonwon
-function refreshButton() {
-	location.reload();
-}
-
-
-
 // Emiraldo Fernandes
 // these are the possible winning combinations for both playerand computer
 const h1= [1,2,3];
@@ -320,6 +288,16 @@ function checkForWinPlayer(){
         setTimeout(function(){ computerTurn(); }, 400); //This lets the computer to play after 400 ms If the player did not win. 
         showOnClick.classList.add("disabled"); //this prevents the cell from being clicked again
     }
+    console.log(playerWon);
+    if(playerWon == true){
+        $('#modal').modal('show');
+        console.log("This will trigger the  modal");
+    }
+    if (playebleSlots.length == 0){
+        console.log("Draw");
+        document.getElementById("winningText").innerHTML = "Draw."
+        $('#modal').modal('show');
+    } 
 }
 // this fuction will tell which combination the computer won with
 function checkForWinComputer(){
@@ -358,11 +336,41 @@ function checkForWinComputer(){
     }else{
         console.log("Computer did not win yet.")
     }
-// if there no more choices to be played then game is over
-    if (playebleSlots.length == 0){
-        console.log("Game over!")
-    } 
+    if(computerWon == true){
+        document.getElementById("winningText").innerHTML = "You lost."
+        $('#modal').modal('show');
+        console.log("This will trigger the  modal");
+    }
+}
 
+//Fabian Gal -
+
+//This blocks the player from selecting any other slot while the computer's turn is due.
+function blockPlayerFromSelecting(){
+    // console.log("Player can no longer select.");
+    for( i=0; i<playebleSlots.length; i++){
+        var disableSlots = playebleSlots[i];
+        document.getElementById(disableSlots).classList.add("disabled");
+    }
+}
+
+//  This removes the desable class from all the ids that are left in the playeblle slots and allows the player to continue playing.
+function allowPlayerToSelect(){
+    for( i=0; i<playebleSlots.length; i++){
+        var disableSlots = playebleSlots[i];
+        document.getElementById(disableSlots).classList.remove("disabled");
+    }
+    // console.log("Player can now select a box.");
+}
+
+function checkButton(){
+    console.log("PlayerChoices: ["+playerChoices+"]");
+    console.log("Computer Choices: ["+computerChoices+"]");
+}
+
+// Fawas Omoshonwon
+function refreshButton() {
+	location.reload();
 }
 
 
