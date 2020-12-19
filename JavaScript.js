@@ -77,24 +77,78 @@ function nineX() {
 
 // Fawas Omoshonwon
 
-function ticTacToe(){
-	playebleSlots = [1,2,3,4,5,6,7,8,9];
-	console.log(" before player choice: " + playebleSlots);
 
-	var playerSplice;
-	playerSplice = playebleSlots.splice(playerChoice, 1);
 
-	console.log(playerSplice);
-	console.log(" before computer choice: " + playebleSlots);
 
-	var computerRandomChoice = Math.floor(Math.random()*playebleSlots.length);//selects random number 1-9
-	var randomNumberSplice = playableSlots.splice(computerRandomChoice, 1);
 
-	var showComputerChoice;
-	showComputerChoice = document.getElementById(randomNumberSplice);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Fawas Omoshonwon
+function checkChoices(){
+	console.log("available slots: " + playebleSlots);
+	console.log(playebleSlots);
+}
+
+
+
+function computerTurn(){
+	var computerRandomchoice = Math.floor(Math.random()*playebleSlots.length);//Select a random number from 1-9
+
+	index = playebleSlots.indexOf(computerRandomChoice);
+	if (index > -1){
+		playebleSlots.splice(index, 1);
+	}
+
+	var showComputerChoice; //place the O
+	showComputerChoice = document.getElementById(computerRandomChoice);
 	showComputerChoice.querySelector("img.o").classList.remove("game-hide-o");
 
 	console.log("computer random choice: " + computerRandomChoice);
-	console.log("random number taken out: " + randomNumberSplice);
-	console.log("playeble slots after: " + playableSlots);
+	console.log(playebleSlots);
+}
+
+function refreshButton() {
+	location.reload();
 }
