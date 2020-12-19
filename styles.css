@@ -242,11 +242,11 @@ a.carousel-control-prev, a.carousel-control-next{
     background-position-x: center;
 }
 
-.row-test .test{
+.row-board .game-cell{
     float: left;
 }
 
-.test{
+.game-cell{
     position: relative;
     height: 159px;
     width: 161px;
@@ -258,7 +258,7 @@ a.carousel-control-prev, a.carousel-control-next{
 middle 139
 */
 
-.test img{
+.game-cell img{
     position: absolute;
     top: 40px;
     right: 40px;
@@ -274,7 +274,7 @@ middle 139
     display: none;
 }
 
-.test:hover {
+.game-cell:hover {
     cursor: pointer;
 }
 

@@ -297,11 +297,6 @@ function checkForWinPlayer(){
         $('#modal').modal('show');
         console.log("This will trigger the  modal");
     }
-    // if (playebleSlots.length == 0){
-    //     console.log("Draw");
-    //     document.getElementById("winningText").innerHTML = "Draw."
-    //     $('#modal').modal('show');
-    // } 
 }
 // this fuction will tell which combination the computer won with
 function checkForWinComputer(){
