@@ -1,37 +1,22 @@
 
 // Fabian Gal
 
-
-// $(document).ready(function() {
-//     $("a").click(function(event) {
-//         alert(event.target.id);
-//     });
-// });
-
-// https://stackoverflow.com/questions/5767325/how-can-i-remove-a-specific-item-from-an-array#:~:text=var%20value%20%3D%20array.splice(,of%20the%20item%20as%20well).
-
-// const array = [1,2,3,4,5,6,7,8,9];
-
-// console.log(array);
-
-// const index = array.indexOf(2);
-// if (index > -1) {
-//   array.splice(index, 1);
-// }
-
-// console.log(array);
-
-
-
 //Most of this code has been inspired from https://www.w3schools.com/, We have tried to look for similar code but unfortunately, in most cases it was irrelevant or too advanced for us to understand. If any content has been copied, there are references available in the comments.
 
+// https://stackoverflow.com/questions/5767325/how-can-i-remove-a-specific-item-from-an-array#:~:text=var%20value%20%3D%20array.splice(,of%20the%20item%20as%20well).
 
 const playebleSlots = [1,2,3,4,5,6,7,8,9]; //This is the enrire grid 1 to 9
 console.log(playebleSlots); // All console logs are used to observe the progress and errors
 
 var index; // This index is being used to remove a specific number from the array in the functions oneX,twoX...
-var showOnClick;
-var i;
+var showOnClick; //This variable is used to display the player choice once a cell is selected.
+var i; //This variable is used for loops.
+var playerChoices = [];
+var computerRandomChoice;
+var computerChoices =[];
+var computerWon = false;
+var playerWon = false;
+
 
 // These functions are the boxes that are going to display the x on click. There must have been a better way to do it unfortunatelly I am not aware of it for the time being
 // I am keeping it like this for now as it works and if there is time I will hopefully look on how to rewrite this.
@@ -40,7 +25,10 @@ function oneX() {
 	showOnClick = document.getElementById("1"); //this will look for the id of 1
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");// this will look inside the id of 1 for an image with the calass of x and remove the class of game-hide-x to reveal the x img.
 
-    console.log("you have picked slot no: 1"); //Checking the code 
+    // console.log("you have picked slot no: 1"); //Checking the code 
+
+    playerChoices.push(1);
+    console.log("player Choices: [" + playerChoices + "]");
 
     index = playebleSlots.indexOf(1); //this will look for the number 1 inside the playebleSlots and will take it away.
     if (index > -1) {
@@ -48,16 +36,17 @@ function oneX() {
     }
     
     blockPlayerFromSelecting(); //this will run a function that will not allow the player to select any other box as the turn of the computer is due. After there will be another function letting the player continue playing.
-
-    setTimeout(function(){ computerTurn(); }, 400); //This lets the computer play but adds some delay so it won't be instantaneous. 
-    showOnClick.classList.add("disabled"); //this prevents the cell from being clicked again
+    checkForWinPlayer()
 }
 // From here on is copy/paste and changing the numbers
 function twoX() {
 	showOnClick = document.getElementById("2");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
 
-    console.log("you have picked slot no: 2");
+    // console.log("you have picked slot no: 2");
+
+    playerChoices.push(2);
+    console.log("player Choices: [" + playerChoices + "]");
 
     index = playebleSlots.indexOf(2);
     if (index > -1) {
@@ -66,14 +55,17 @@ function twoX() {
     
     blockPlayerFromSelecting();
 
-    setTimeout(function(){ computerTurn(); }, 400);
-    showOnClick.classList.add("disabled");
+    checkForWinPlayer()
+
 }
 function threeX() {
 	showOnClick = document.getElementById("3");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
 
-    console.log("you have picked slot no: 3");
+    // console.log("you have picked slot no: 3");
+
+    playerChoices.push(3);
+    console.log("player Choices: [" + playerChoices + "]");
 
     index = playebleSlots.indexOf(3);
     if (index > -1) {
@@ -82,15 +74,18 @@ function threeX() {
     
     blockPlayerFromSelecting();
 
-    setTimeout(function(){ computerTurn(); }, 400);
-    showOnClick.classList.add("disabled");
+    checkForWinPlayer()
+
 }
 
 function fourX() {
 	showOnClick = document.getElementById("4");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
 
-    console.log("you have picked slot no: 4");
+    // console.log("you have picked slot no: 4");
+
+    playerChoices.push(4);
+    console.log("player Choices: [" + playerChoices + "]");
 
     index = playebleSlots.indexOf(4);
     if (index > -1) {
@@ -99,14 +94,17 @@ function fourX() {
     
     blockPlayerFromSelecting();
 
-    setTimeout(function(){ computerTurn(); }, 400);
-    showOnClick.classList.add("disabled");
+    checkForWinPlayer()
+ 
 }
 function fiveX() {
 	showOnClick = document.getElementById("5");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
 
-    console.log("you have picked slot no: 5");
+    // console.log("you have picked slot no: 5");
+
+    playerChoices.push(5);
+    console.log("player Choices: [" + playerChoices + "]");
 
     index = playebleSlots.indexOf(5);
     if (index > -1) {
@@ -115,14 +113,17 @@ function fiveX() {
     
     blockPlayerFromSelecting();
 
-    setTimeout(function(){ computerTurn(); }, 400);
-    showOnClick.classList.add("disabled");
+    checkForWinPlayer()
+
 }
 function sixX() {
 	showOnClick = document.getElementById("6");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
 
-    console.log("you have picked slot no: 6");
+    // console.log("you have picked slot no: 6");
+
+    playerChoices.push(6);
+    console.log("player Choices: [" + playerChoices + "]");
 
     index = playebleSlots.indexOf(6);
     if (index > -1) {
@@ -131,15 +132,18 @@ function sixX() {
     
     blockPlayerFromSelecting();
 
-    setTimeout(function(){ computerTurn(); }, 400);
-    showOnClick.classList.add("disabled");
+    checkForWinPlayer()
+ 
 }
 
 function sevenX() {
 	showOnClick = document.getElementById("7");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
     
-    console.log("you have picked slot no: 7");
+    // console.log("you have picked slot no: 7");
+
+    playerChoices.push(7);
+    console.log("player Choices: [" + playerChoices + "]");
 
     index = playebleSlots.indexOf(7);
     if (index > -1) {
@@ -148,14 +152,16 @@ function sevenX() {
     
     blockPlayerFromSelecting();
 
-    setTimeout(function(){ computerTurn(); }, 400);
-    showOnClick.classList.add("disabled");
+    checkForWinPlayer()
 }
 function eightX() {
 	showOnClick = document.getElementById("8");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
 
-    console.log("you have picked slot no: 8");
+    // console.log("you have picked slot no: 8");
+
+    playerChoices.push(8);
+    console.log("player Choices: [" + playerChoices + "]");
 
     index = playebleSlots.indexOf(8);
     if (index > -1) {
@@ -164,14 +170,17 @@ function eightX() {
     
     blockPlayerFromSelecting();
     
-    setTimeout(function(){ computerTurn(); }, 400);
-    showOnClick.classList.add("disabled");
+    checkForWinPlayer()
+
 }
 function nineX() {
 	showOnClick = document.getElementById("9");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
     
-    console.log("you have picked slot no: 9");
+    // console.log("you have picked slot no: 9");
+    
+    playerChoices.push(9);
+    console.log("player Choices: [" + playerChoices + "]");
 
     index = playebleSlots.indexOf(9);
     if (index > -1) {
@@ -180,21 +189,12 @@ function nineX() {
 
     blockPlayerFromSelecting();
 
-    setTimeout(function(){ computerTurn(); }, 400);
-    showOnClick.classList.add("disabled");
-
-    //This blocks the player from selecting any other slot while the computer's turn is due.
+    checkForWinPlayer()
     
 }
 
-//This blocks the player from selecting any other slot while the computer's turn is due.
-function blockPlayerFromSelecting(){
-    console.log("Player can no longer select.");
-    for( i=0; i<playebleSlots.length; i++){
-        var disableSlots = playebleSlots[i];
-        document.getElementById(disableSlots).classList.add("disabled");
-    }
-}
+
+
 
 // Fawas Omoshonwon
 function checkChoices(){
@@ -205,38 +205,29 @@ function checkChoices(){
 
 
 function computerTurn(){
-	var computerRandomChoice = playebleSlots[Math.floor(Math.random()*playebleSlots.length)];//Select a random number from the number of items left
+    if (playebleSlots.length > 0){
+        computerRandomChoice = playebleSlots[Math.floor(Math.random()*playebleSlots.length)];//Select a random number from the number of items left
 
-	index = playebleSlots.indexOf(computerRandomChoice);
-	if (index > -1){
-		playebleSlots.splice(index, 1);
-	}
+        index = playebleSlots.indexOf(computerRandomChoice);
+        if (index > -1){
+            playebleSlots.splice(index, 1);
+        }
 
-	var showComputerChoice; //place the O
-	showComputerChoice = document.getElementById(computerRandomChoice);
-	showComputerChoice.querySelector("img.o").classList.remove("game-hide-o");
-    showComputerChoice.classList.add("disabled"); // This disacbles the cell from being clicked
+        computerChoices.push(computerRandomChoice);
+        console.log("Computer Choices: [" + computerChoices + "]");
 
-	console.log("computer random choice: " + computerRandomChoice);
-    console.log(playebleSlots);
-    
-    allowPlayerToSelect();
-}
+        var showComputerChoice; //place the O
+        showComputerChoice = document.getElementById(computerRandomChoice);
+        showComputerChoice.querySelector("img.o").classList.remove("game-hide-o");
+        showComputerChoice.classList.add("disabled"); // This disacbles the cell from being clicked
 
-// Fabian Gal - This removes the desable class from all the ids that are left in the playeblle slots and allows the player to continue playing.
-function allowPlayerToSelect(){
-    for( i=0; i<playebleSlots.length; i++){
-        var disableSlots = playebleSlots[i];
-        document.getElementById(disableSlots).classList.remove("disabled");
+        // console.log("computer random choice: " + computerRandomChoice);
+        console.log(playebleSlots);
+        
+        allowPlayerToSelect();
+        checkForWinComputer();
     }
-    console.log("Player can now select a box.");
 }
-
-// Fawas Omoshonwon
-function refreshButton() {
-	location.reload();
-}
-
 
 
 // Emiraldo Fernandes
@@ -293,9 +284,18 @@ function checkForWinPlayer(){
         console.log("Player won, using X2 !!!");
         blockPlayerFromSelecting();
         playerWon = true;
+    }else if (playebleSlots.length == 0){
+        console.log("Draw");
+        document.getElementById("winningText").innerHTML = "Draw."
+        $('#modal').modal('show');
     }else{
         setTimeout(function(){ computerTurn(); }, 400); //This lets the computer to play after 400 ms If the player did not win. 
         showOnClick.classList.add("disabled"); //this prevents the cell from being clicked again
+    }
+    console.log(playerWon);
+    if(playerWon == true){
+        $('#modal').modal('show');
+        console.log("This will trigger the  modal");
     }
 }
 // this fuction will tell which combination the computer won with
@@ -335,11 +335,41 @@ function checkForWinComputer(){
     }else{
         console.log("Computer did not win yet.")
     }
-// if there no more choices to be played then game is over
-    if (playebleSlots.length == 0){
-        console.log("Game over!")
-    } 
+    if(computerWon == true){
+        document.getElementById("winningText").innerHTML = "You lost."
+        $('#modal').modal('show');
+        console.log("This will trigger the  modal");
+    }
+}
 
+//Fabian Gal -
+
+//This blocks the player from selecting any other slot while the computer's turn is due.
+function blockPlayerFromSelecting(){
+    // console.log("Player can no longer select.");
+    for( i=0; i<playebleSlots.length; i++){
+        var disableSlots = playebleSlots[i];
+        document.getElementById(disableSlots).classList.add("disabled");
+    }
+}
+
+//  This removes the desable class from all the ids that are left in the playeblle slots and allows the player to continue playing.
+function allowPlayerToSelect(){
+    for( i=0; i<playebleSlots.length; i++){
+        var disableSlots = playebleSlots[i];
+        document.getElementById(disableSlots).classList.remove("disabled");
+    }
+    // console.log("Player can now select a box.");
+}
+
+function checkButton(){
+    console.log("PlayerChoices: ["+playerChoices+"]");
+    console.log("Computer Choices: ["+computerChoices+"]");
+}
+
+// Fawas Omoshonwon
+function refreshButton() {
+	location.reload();
 }
 
 
