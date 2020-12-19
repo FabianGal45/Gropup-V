@@ -65,7 +65,7 @@ function threeX() {
 }
 
 function fourX() {
-	var showOnClick = document.getElementById("4"); 
+	var showOnClick = document.getElementById("4");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
     console.log("you have picked slot no: 4");
     index = playebleSlots.indexOf(4);
@@ -95,7 +95,7 @@ function sixX() {
 }
 
 function sevenX() {
-	var showOnClick = document.getElementById("7"); 
+	var showOnClick = document.getElementById("7");
     showOnClick.querySelector("img.x").classList.remove("game-hide-x");
     console.log("you have picked slot no: 7");
     index = playebleSlots.indexOf(7);
@@ -122,13 +122,26 @@ function nineX() {
     }
 }
 
+// Fawas Omoshonwon
 
-    
+function ticTacToe(){
+	playebleSlots = [1,2,3,4,5,6,7,8,9];
+	console.log(" before player choice: " + playebleSlots);
 
+	var playerSplice;
+	playerSplice = playebleSlots.splice(playerChoice, 1);
 
+	console.log(playerSplice);
+	console.log(" before computer choice: " + playebleSlots);
 
+	var computerRandomChoice = Math.floor(Math.random()*playebleSlots.length);//selects random number 1-9
+	var randomNumberSplice = playableSlots.splice(computerRandomChoice, 1);
 
+	var showComputerChoice;
+	showComputerChoice = document.getElementById(randomNumberSplice);
+	showComputerChoice.querySelector("img.o").classList.remove("game-hide-o");
 
-
-
-
+	console.log("computer random choice: " + computerRandomChoice);
+	console.log("random number taken out: " + randomNumberSplice);
+	console.log("playeble slots after: " + playableSlots);
+}
