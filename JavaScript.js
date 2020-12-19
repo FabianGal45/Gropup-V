@@ -30,8 +30,8 @@ const playebleSlots = [1,2,3,4,5,6,7,8,9]; //This is the enrire grid 1 to 9
 console.log(playebleSlots); // All console logs are used to observe the progress and errors
 
 var index; // This index is being used to remove a specific number from the array in the functions oneX,twoX...
-var showOnClick;
-var i;
+var showOnClick; //This variable is used to display the player choice once a cell is selected.
+var i; //This variable is used for loops.
 
 // These functions are the boxes that are going to display the x on click. There must have been a better way to do it unfortunatelly I am not aware of it for the time being
 // I am keeping it like this for now as it works and if there is time I will hopefully look on how to rewrite this.
