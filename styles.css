@@ -271,7 +271,15 @@ middle 139
 }
 
 
+/* this class will not allow the user to interract for the time the compute's turn is due */
+/* https://stackoverflow.com/questions/15207177/disable-button-with-timeout */
 
+div.disabled { 
+    pointer-events: none; 
+    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; 
+    user-select: none;          
+}
+div.disabled *:focus { outline: 0; }
 
 
 
