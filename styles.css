@@ -241,6 +241,7 @@ a.carousel-control-prev, a.carousel-control-next{
 .test{
     position: relative;
     height: 159px;
+    width: 161px;
 }
 .game-grid-line{
     width: 14px;
@@ -257,24 +258,16 @@ middle 139
     margin-right: auto;
 }
 
-.col1, .row2.col1{
-    width: 161px;
-}
-
-.col2{
-    width: 161px;
-}
-
-.col3{
-    width: 161px;
-}
-
 .game-hide-x{
-    display: none;
+    display:none;
 }
 
 .game-hide-o{
     display: none;
+}
+
+.test:hover {
+    cursor: pointer;
 }
 
 
