@@ -141,53 +141,6 @@ function nineX() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Fawas Omoshonwon
 function checkChoices(){
 	console.log("available slots: " + playebleSlots);
@@ -197,7 +150,7 @@ function checkChoices(){
 
 
 function computerTurn(){
-	var computerRandomchoice = Math.floor(Math.random()*playebleSlots.length);//Select a random number from 1-9
+	var computerRandomChoice = playebleSlots[Math.floor(Math.random()*playebleSlots.length)];//Select a random number from the number of items left
 
 	index = playebleSlots.indexOf(computerRandomChoice);
 	if (index > -1){
@@ -207,6 +160,7 @@ function computerTurn(){
 	var showComputerChoice; //place the O
 	showComputerChoice = document.getElementById(computerRandomChoice);
 	showComputerChoice.querySelector("img.o").classList.remove("game-hide-o");
+    showComputerChoice.querySelector("img.x").remove(); // This makes the x image dissapear so it does not show the x when clicked again.
 
 	console.log("computer random choice: " + computerRandomChoice);
 	console.log(playebleSlots);
