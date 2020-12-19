@@ -196,6 +196,11 @@ function nineX() {
 
 
 
+
+
+
+
+
 // Fawas Omoshonwon
 function checkChoices(){
 	console.log("available slots: " + playebleSlots);
@@ -230,6 +235,114 @@ function computerTurn(){
 }
 
 
+
+
+
+
+
+// Emiraldo Fernandes
+
+const h1= [1,2,3];
+const h2= [4,5,6];
+const h3= [7,8,9];
+const v1= [1,4,7];
+const v2= [2,5,8];
+const v3= [3,6,9];
+const x1= [1,5,9];
+const x2= [3,5,7];
+
+
+// https://www.tutorialspoint.com/how-to-check-whether-multiple-values-exist-within-a-javascript-array
+const contains = (first, second) => {
+    const indexArray = first.map(el => {
+       return second.indexOf(el);
+    });
+    return indexArray.indexOf(-1) === -1;
+}
+
+function checkForWinPlayer(){
+    if (contains(h1,playerChoices) == true){
+        console.log("Player won, using H1 !!!");
+        blockPlayerFromSelecting();
+        playerWon = true;
+    }else if (contains(h2,playerChoices) == true){
+        console.log("Player won, using H2 !!!");
+        blockPlayerFromSelecting();
+        playerWon = true;
+    }else if (contains(h3,playerChoices) == true){
+        console.log("Player won, using H3 !!!");
+        blockPlayerFromSelecting();
+        playerWon = true;
+    }else if (contains(v1,playerChoices) == true){
+        console.log("Player won, using V1 !!!");
+        blockPlayerFromSelecting();
+        playerWon = true;
+    }else if (contains(v2,playerChoices) == true){
+        console.log("Player won, using V2 !!!");
+        blockPlayerFromSelecting();
+        playerWon = true;
+    }else if (contains(v3,playerChoices) == true){
+        console.log("Player won, using V3 !!!");
+        blockPlayerFromSelecting();
+        playerWon = true;
+    }else if (contains(x1,playerChoices) == true){
+        console.log("Player won, using X1 !!!");
+        blockPlayerFromSelecting();
+        playerWon = true;
+    }else if (contains(x2,playerChoices) == true){
+        console.log("Player won, using X2 !!!");
+        blockPlayerFromSelecting();
+        playerWon = true;
+    }else{
+        setTimeout(function(){ computerTurn(); }, 400); //This lets the computer play but adds some delay so it won't be instantaneous. 
+        showOnClick.classList.add("disabled"); //this prevents the cell from being clicked again
+    }
+}
+
+function checkForWinComputer(){
+    if (contains(h1,computerChoices) == true){
+        console.log("Computer won, using H1 !!!");
+        blockPlayerFromSelecting();
+        computerWon= true;
+    }else if (contains(h2,computerChoices) == true){
+        console.log("Computer won, using H2 !!!");
+        blockPlayerFromSelecting();
+        computerWon= true;
+    }else if (contains(h3,computerChoices) == true){
+        console.log("Computer won, using H3 !!!");
+        blockPlayerFromSelecting();
+        computerWon= true;
+    }else if (contains(v1,computerChoices) == true){
+        console.log("Computer won, using V1 !!!");
+        blockPlayerFromSelecting();
+        computerWon= true;
+    }else if (contains(v2,computerChoices) == true){
+        console.log("Computer won, using V2 !!!");
+        blockPlayerFromSelecting();
+        computerWon= true;
+    }else if (contains(v3,computerChoices) == true){
+        console.log("Computer won, using V3 !!!");
+        blockPlayerFromSelecting();
+        computerWon= true;
+    }else if (contains(x1,computerChoices) == true){
+        console.log("Computer won, using X1 !!!");
+        blockPlayerFromSelecting();
+        computerWon= true;
+    }else if (contains(x2,computerChoices) == true){
+        console.log("Computer won, using X2 !!!");
+        blockPlayerFromSelecting();
+        computerWon= true;
+    }else{
+        console.log("Computer did not win yet.")
+    }
+
+    if (playebleSlots.length == 0){
+        console.log("Game over!")
+    } 
+
+}
+
+
 //Fabian Gal -
 
 //This blocks the player from selecting any other slot while the computer's turn is due.
@@ -254,6 +367,13 @@ function checkButton(){
     console.log("PlayerChoices: ["+playerChoices+"]");
     console.log("Computer Choices: ["+computerChoices+"]");
 }
+
+
+
+if (computerWon = true){
+    
+}
+
 
 // Fawas Omoshonwon
 function refreshButton() {
